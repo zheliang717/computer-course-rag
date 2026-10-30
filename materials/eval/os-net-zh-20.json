@@ -1,0 +1,28 @@
+{
+  "schema_version": 2,
+  "dataset_version": "os-net-zh-openbooks-20-v1",
+  "description": "两本开放英文教材的中文提问跨语言检索冒烟集：每课 8 条课程内问题、2 条资料外问题。",
+  "case_count": 20,
+  "cases": [
+    {"id": "os-process", "kind": "positive", "question": "操作系统为什么需要进程隔离？", "knowledge_base_id": "4d22b074-394d-4693-9d8c-feea508160e1", "expected_documents": ["Think OS: A Brief Introduction to Operating Systems"], "expected_terms_any": ["process", "Process"]},
+    {"id": "os-virtual-memory", "kind": "positive", "question": "什么是虚拟内存？", "knowledge_base_id": "4d22b074-394d-4693-9d8c-feea508160e1", "expected_documents": ["Think OS: A Brief Introduction to Operating Systems"], "expected_terms_any": ["virtual", "Virtual"]},
+    {"id": "os-address", "kind": "positive", "question": "地址转换如何把虚拟地址映射到物理地址？", "knowledge_base_id": "4d22b074-394d-4693-9d8c-feea508160e1", "expected_documents": ["Think OS: A Brief Introduction to Operating Systems"], "expected_terms_any": ["address", "Address"]},
+    {"id": "os-filesystem", "kind": "positive", "question": "文件系统如何组织数据？", "knowledge_base_id": "4d22b074-394d-4693-9d8c-feea508160e1", "expected_documents": ["Think OS: A Brief Introduction to Operating Systems"], "expected_terms_any": ["file", "File"]},
+    {"id": "os-scheduling", "kind": "positive", "question": "操作系统如何进行多任务调度？", "knowledge_base_id": "4d22b074-394d-4693-9d8c-feea508160e1", "expected_documents": ["Think OS: A Brief Introduction to Operating Systems"], "expected_terms_any": ["schedul", "Scheduling"]},
+    {"id": "os-threads", "kind": "positive", "question": "线程与互斥锁有什么关系？", "knowledge_base_id": "4d22b074-394d-4693-9d8c-feea508160e1", "expected_documents": ["Think OS: A Brief Introduction to Operating Systems"], "expected_terms_any": ["thread", "mutex"]},
+    {"id": "os-semaphore", "kind": "positive", "question": "信号量如何协调并发任务？", "knowledge_base_id": "4d22b074-394d-4693-9d8c-feea508160e1", "expected_documents": ["Think OS: A Brief Introduction to Operating Systems"], "expected_terms_any": ["semaphore", "Semaphore"]},
+    {"id": "os-cache", "kind": "positive", "question": "缓存和内存层次结构为什么能提升性能？", "knowledge_base_id": "4d22b074-394d-4693-9d8c-feea508160e1", "expected_documents": ["Think OS: A Brief Introduction to Operating Systems"], "expected_terms_any": ["cache", "Cache"]},
+    {"id": "os-negative-food", "kind": "negative", "question": "如何制作提拉米苏？", "knowledge_base_id": "4d22b074-394d-4693-9d8c-feea508160e1", "expected_documents": [], "expected_terms_any": []},
+    {"id": "os-negative-history", "kind": "negative", "question": "法国大革命发生在哪一年？", "knowledge_base_id": "4d22b074-394d-4693-9d8c-feea508160e1", "expected_documents": [], "expected_terms_any": []},
+    {"id": "net-ethernet", "kind": "positive", "question": "以太网帧是如何传输的？", "knowledge_base_id": "a304f045-574e-4d6a-bb88-672427bedf35", "expected_documents": ["Computer Networks: A Systems Approach"], "expected_terms_any": ["Ethernet", "frame"]},
+    {"id": "net-ip", "kind": "positive", "question": "IP 协议在网络通信中起什么作用？", "knowledge_base_id": "a304f045-574e-4d6a-bb88-672427bedf35", "expected_documents": ["Computer Networks: A Systems Approach"], "expected_terms_any": ["IP", "Internet"]},
+    {"id": "net-routing", "kind": "positive", "question": "路由器怎样选择转发路径？", "knowledge_base_id": "a304f045-574e-4d6a-bb88-672427bedf35", "expected_documents": ["Computer Networks: A Systems Approach"], "expected_terms_any": ["routing", "Routing", "router"]},
+    {"id": "net-tcp", "kind": "positive", "question": "TCP流量控制如何工作？", "knowledge_base_id": "a304f045-574e-4d6a-bb88-672427bedf35", "expected_documents": ["Computer Networks: A Systems Approach"], "expected_terms_any": ["TCP", "window"]},
+    {"id": "net-udp", "kind": "positive", "question": "UDP 与 TCP 有什么区别？", "knowledge_base_id": "a304f045-574e-4d6a-bb88-672427bedf35", "expected_documents": ["Computer Networks: A Systems Approach"], "expected_terms_any": ["UDP", "TCP"]},
+    {"id": "net-congestion", "kind": "positive", "question": "网络拥塞控制为什么重要？", "knowledge_base_id": "a304f045-574e-4d6a-bb88-672427bedf35", "expected_documents": ["Computer Networks: A Systems Approach"], "expected_terms_any": ["congestion", "Congestion"]},
+    {"id": "net-dns", "kind": "positive", "question": "DNS 如何解析域名？", "knowledge_base_id": "a304f045-574e-4d6a-bb88-672427bedf35", "expected_documents": ["Computer Networks: A Systems Approach"], "expected_terms_any": ["DNS", "domain"]},
+    {"id": "net-security", "kind": "positive", "question": "网络安全为什么需要加密通信？", "knowledge_base_id": "a304f045-574e-4d6a-bb88-672427bedf35", "expected_documents": ["Computer Networks: A Systems Approach"], "expected_terms_any": ["encrypt", "security", "Security"]},
+    {"id": "net-negative-biology", "kind": "negative", "question": "植物光合作用的暗反应在哪里进行？", "knowledge_base_id": "a304f045-574e-4d6a-bb88-672427bedf35", "expected_documents": [], "expected_terms_any": []},
+    {"id": "net-negative-music", "kind": "negative", "question": "莫扎特写过哪些歌剧？", "knowledge_base_id": "a304f045-574e-4d6a-bb88-672427bedf35", "expected_documents": [], "expected_terms_any": []}
+  ]
+}

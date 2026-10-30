@@ -1,0 +1,27 @@
+[
+  {
+    "question": "数据结构的三个要素是什么？",
+    "expected_terms": ["逻辑结构", "存储结构", "操作"],
+    "expected_document": "数据结构"
+  },
+  {
+    "question": "二叉树的递归定义包含哪些情况？",
+    "expected_terms": ["左子树", "右子树"],
+    "expected_document": "树与二叉树"
+  },
+  {
+    "question": "二叉查找树查找元素时为什么能够缩小搜索范围？",
+    "expected_terms": ["左子树", "右子树"],
+    "expected_document": "二叉查找树"
+  },
+  {
+    "question": "贪心法的设计思想是什么？",
+    "expected_terms": ["局部", "最优"],
+    "expected_document": "贪心与动态规划"
+  },
+  {
+    "question": "动态规划的最优子结构是什么？",
+    "expected_terms": ["最优子结构", "递推关系"],
+    "expected_document": "贪心与动态规划"
+  }
+]

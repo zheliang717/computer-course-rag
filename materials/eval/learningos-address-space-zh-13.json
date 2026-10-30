@@ -1,0 +1,22 @@
+{
+  "schema_version": 2,
+  "dataset_version": "learningos-address-space-zh-13-v1",
+  "description": "固定版本 LearningOS《地址空间》文字摘编的中文检索基线；11 条正文内问题按主题页人工标注，另有 2 条资料外问题。只评价站内检索，不评价生成答案或外部模型许可。",
+  "knowledge_base_id": "4d22b074-394d-4693-9d8c-feea508160e1",
+  "case_count": 13,
+  "cases": [
+    {"id": "addr-three-types", "kind": "positive", "question": "物理地址、逻辑地址、虚拟地址分别是什么？", "expected_documents": ["清华大学操作系统课程：物理内存管理·地址空间（文字摘编）"], "expected_pages": [1], "expected_terms_any": ["物理地址", "逻辑地址", "虚拟地址"]},
+    {"id": "addr-segment", "kind": "positive", "question": "段式内存管理怎样转换虚拟地址？", "expected_documents": ["清华大学操作系统课程：物理内存管理·地址空间（文字摘编）"], "expected_pages": [1], "expected_terms_any": ["分段", "段式管理"]},
+    {"id": "addr-page", "kind": "positive", "question": "页式内存管理怎样转换虚拟地址？", "expected_documents": ["清华大学操作系统课程：物理内存管理·地址空间（文字摘编）"], "expected_pages": [1], "expected_terms_any": ["分页", "页式管理"]},
+    {"id": "addr-segment-page", "kind": "positive", "question": "段页式管理中的地址转换先后经过什么？", "expected_documents": ["清华大学操作系统课程：物理内存管理·地址空间（文字摘编）"], "expected_pages": [1], "expected_terms_any": ["段页式", "先通过分段"]},
+    {"id": "addr-mmu", "kind": "positive", "question": "MMU 在 CPU 访问内存时负责什么？", "expected_documents": ["清华大学操作系统课程：物理内存管理·地址空间（文字摘编）"], "expected_pages": [2], "expected_terms_any": ["MMU", "内存管理单元"]},
+    {"id": "addr-generation", "kind": "positive", "question": "地址在编译时、加载时和执行时生成有什么区别？", "expected_documents": ["清华大学操作系统课程：物理内存管理·地址空间（文字摘编）"], "expected_pages": [2], "expected_terms_any": ["编译时", "加载时", "执行时"]},
+    {"id": "addr-mapping", "kind": "positive", "question": "操作系统和 MMU 如何配合建立虚拟地址到物理地址的映射？", "expected_documents": ["清华大学操作系统课程：物理内存管理·地址空间（文字摘编）"], "expected_pages": [2], "expected_terms_any": ["建立虚拟地址", "进行虚拟地址"]},
+    {"id": "addr-cache", "kind": "positive", "question": "虚拟内存为什么可以作为外存的缓存？", "expected_documents": ["清华大学操作系统课程：物理内存管理·地址空间（文字摘编）"], "expected_pages": [3], "expected_terms_any": ["外存的缓存", "常用数据"]},
+    {"id": "addr-independent", "kind": "positive", "question": "每个运行程序有独立地址空间能带来哪些便利？", "expected_documents": ["清华大学操作系统课程：物理内存管理·地址空间（文字摘编）"], "expected_pages": [3], "expected_terms_any": ["独立的地址空间", "简化应用"]},
+    {"id": "addr-protection", "kind": "positive", "question": "地址转换机制怎样保护进程内存？", "expected_documents": ["清华大学操作系统课程：物理内存管理·地址空间（文字摘编）"], "expected_pages": [3], "expected_terms_any": ["保护数据", "特权级检查"]},
+    {"id": "addr-hierarchy", "kind": "positive", "question": "存储层次结构对速度、容量和保护有什么作用？", "expected_documents": ["清华大学操作系统课程：物理内存管理·地址空间（文字摘编）"], "expected_pages": [3], "expected_terms_any": ["存储层次结构", "存储效率"]},
+    {"id": "negative-cooking", "kind": "negative", "question": "提拉米苏的奶油怎么打发？", "expected_documents": [], "expected_terms_any": []},
+    {"id": "negative-music", "kind": "negative", "question": "莫扎特写了哪部歌剧？", "expected_documents": [], "expected_terms_any": []}
+  ]
+}

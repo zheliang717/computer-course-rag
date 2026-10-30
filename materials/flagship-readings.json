@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-10-28",
+  "edition": "R2-20261028-v1",
+  "notes": "固定版本文字选读，不是完整教材；主题页码按本系统重排。保留原许可，省略图片、代码嵌入、外链目标、隐藏注释及未列明段落。课程章节对应仅为选读建议，不更改教师教学大纲。",
+  "packs": [
+    {
+      "id": "hello-algo-stack-binary-zh-r2-v1",
+      "title": "Hello 算法：栈与二分查找（中文选读）",
+      "author": "Krahets 与 Hello 算法贡献者",
+      "repository": "krahets/hello-algo",
+      "commit": "71a773df64fa20a31e32c23e01e6d29442d54adb",
+      "knowledge_base_name": "计算机课程资料库",
+      "course_codes": ["DSA-2026", "CS201-26F"],
+      "license_name": "CC BY-NC-SA 4.0（文字选读）",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans",
+      "license_file": "LICENSE",
+      "license_sha256": "1349a4b6148492b44f629e64eed676612e234fe9a839e4f3b277c1482c8849f1",
+      "files": {
+        "stack": {"path": "docs/chapter_stack_and_queue/stack.md", "sha256": "3c0ff86f2fd2e2a625fa79a319c662d42a4cae365fd678e70441cf9ccbe3d54e"},
+        "binary": {"path": "docs/chapter_searching/binary_search.md", "sha256": "62b0d510fa0fb09f64d158b846b2d5db1ffea71c9d702455ca005a77b7eed226"}
+      },
+      "pages": [
+        {"chapter": "栈：后进先出与基本操作", "file": "stack", "ranges": [[1, 7], [11, 23]], "related_sections": ["第 1 章  栈"], "keywords": ["先入后出", "push", "pop", "peek"]},
+        {"chapter": "栈：实现、扩容与典型应用", "file": "stack", "ranges": [[356, 366], [383, 385], [402, 430]], "related_sections": ["第 1 章  栈"], "keywords": ["扩容", "递归", "链表"]},
+        {"chapter": "二分查找：有序前提、区间与中点", "file": "binary", "ranges": [[1, 7], [11, 21], [44, 44]], "related_sections": ["查找", "第 2 章  二分查找"], "keywords": ["有序", "m + 1", "m - 1"]},
+        {"chapter": "二分查找：复杂度与适用边界", "file": "binary", "ranges": [[72, 83]], "related_sections": ["查找", "第 2 章  二分查找"], "keywords": ["链表", "20", "排序"]}
+      ]
+    },
+    {
+      "id": "learningos-process-replacement-zh-r2-v1",
+      "title": "清华大学操作系统课程：进程管理与页面置换（文字选读）",
+      "author": "向勇、陈渝、李国良、任炬 / LearningOS 课程贡献者",
+      "repository": "LearningOS/os-lectures",
+      "commit": "61be90c7839b64849410a806e28534e79979a5fb",
+      "knowledge_base_name": "操作系统开放教材",
+      "course_codes": ["OS-2026", "CS202-26F"],
+      "license_name": "MIT（文字选读，不含图片）",
+      "license_url": "https://github.com/LearningOS/os-lectures/blob/61be90c7839b64849410a806e28534e79979a5fb/LICENSE",
+      "license_file": "LICENSE",
+      "license_sha256": "d6919dc32f681a8f11682d687fccb891f38e31fe813b4938a2b3b89c1692a658",
+      "files": {
+        "process": {"path": "lec7/p1-process-overview.md", "sha256": "26be7ff5610a05b36532f889846a19cdc068ae63e63ff47dff035493200caa51"},
+        "replacement": {"path": "lec6/p2-localpagereplace.md", "sha256": "e4d838f2ae8efb5497c4219904409c704a4bea105a78843c391f30ffa998b9e1"}
+      },
+      "pages": [
+        {"chapter": "进程：动态执行、控制流与资源", "file": "process", "ranges": [[104, 106], [112, 116], [130, 136], [142, 150]], "related_sections": ["进程与线程", "第 1 章  进程"], "keywords": ["控制流", "地址空间", "执行"]},
+        {"chapter": "进程切换：保存与恢复上下文", "file": "process", "ranges": [[342, 349], [355, 363]], "related_sections": ["进程与线程", "第 1 章  进程"], "keywords": ["上下文", "就绪", "寄存器"]},
+        {"chapter": "页面置换：局部范围、OPT与FIFO", "file": "replacement", "ranges": [[51, 58], [85, 89], [102, 111], [128, 142], [183, 198]], "related_sections": ["内存管理", "第 4 章  LRU"], "keywords": ["Belady", "先进先出", "未来"]},
+        {"chapter": "LRU：最近最久未使用与链表维护", "file": "replacement", "ranges": [[254, 262], [308, 317], [321, 327]], "related_sections": ["内存管理", "第 4 章  LRU"], "keywords": ["上一次", "链表尾", "开销"]}
+      ]
+    },
+    {
+      "id": "mdn-dns-tcp-tls-zh-r2-v1",
+      "title": "MDN Web Docs：DNS、TCP与TLS（中文选读）",
+      "author": "MDN Web Docs / Mozilla 贡献者",
+      "repository": "mdn/translated-content",
+      "commit": "2a7c03a449507969b925ac954f41c340d7c50263",
+      "knowledge_base_name": "计算机网络开放教材",
+      "course_codes": ["NET-2026", "CS203-26F"],
+      "license_name": "CC BY-SA 2.5（文字选读）",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.5/deed.zh",
+      "license_file": "LICENSE.md",
+      "license_sha256": "57c0d7e200fadfdbadb04b9ab220297809ba7f2ac0adaa6707a07fba432b2ebe",
+      "files": {
+        "dns": {"path": "files/zh-cn/glossary/dns/index.md", "sha256": "fc498faf1d560737296e529178b5cb1c1949de0f942515112e06005fa21015f2"},
+        "tcp": {"path": "files/zh-cn/glossary/tcp/index.md", "sha256": "d7a260cef0c0bb5d169516f50280b8aa3e8f4c466ef9096673d9c0a9504371c0"},
+        "tls": {"path": "files/zh-cn/glossary/tls/index.md", "sha256": "f257a697294e78a8bcf6cb962d08eef9bf51c519613a9d9e17c8e9d0cce3494e"}
+      },
+      "pages": [
+        {"chapter": "DNS：域名解析与反向查询", "file": "dns", "ranges": [[8, 10]], "related_sections": ["第 3 章  DNS"], "keywords": ["域名", "IP", "反向"]},
+        {"chapter": "TCP：可靠有序传输与拥塞控制", "file": "tcp", "ranges": [[8, 10]], "related_sections": ["传输层", "第 2 章  TCP"], "keywords": ["可靠", "顺序", "拥塞"]},
+        {"chapter": "TLS：加密通信与证书认证", "file": "tls", "ranges": [[8, 10]], "related_sections": ["第 4 章  HTTPS"], "keywords": ["证书", "认证", "篡改"]}
+      ]
+    }
+  ]
+}

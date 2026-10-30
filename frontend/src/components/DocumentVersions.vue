@@ -1,0 +1,28 @@
+<script setup lang="ts">
+import { onMounted, ref } from 'vue'
+import DetailDialog from './DetailDialog.vue'
+type Version={revision:number;filename:string;page_count:number;has_pdf:boolean;created_at:string;preprocessing:Record<string,unknown>}
+const props=defineProps<{documentId:string;request:(path:string,options?:RequestInit)=>Promise<unknown>;base:string;token:string}>()
+const emit=defineEmits<{close:[];changed:[]}>()
+const page=ref(1),total=ref(0),current=ref(0),rows=ref<Version[]>([]),busy=ref(false),error=ref(''),notice=ref('')
+const chosen=ref<Version|null>(null),preview=ref<Array<{page_number:number;content:string}>>([]),previewPage=ref(1),previewTotal=ref(0),confirm=ref(false)
+async function load(){busy.value=true;error.value='';try{const d=await props.request(`/api/v1/documents/${props.documentId}/versions?page=${page.value}&page_size=6`) as {items:Version[];total:number;current_revision:number};rows.value=d.items;total.value=d.total;current.value=d.current_revision}catch(e){error.value=e instanceof Error?e.message:'版本读取失败'}finally{busy.value=false}}
+async function view(v:Version,p=1){busy.value=true;error.value='';try{const d=await props.request(`/api/v1/documents/${props.documentId}/versions/${v.revision}?page=${p}&page_size=3`) as {items:typeof preview.value;total:number};chosen.value=v;preview.value=d.items;previewPage.value=p;previewTotal.value=d.total}catch(e){error.value=e instanceof Error?e.message:'版本内容读取失败'}finally{busy.value=false}}
+async function download(v:Version){busy.value=true;error.value='';let url='';try{const r=await fetch(`${props.base}/api/v1/documents/${props.documentId}/versions/${v.revision}/download`,{headers:{Authorization:'Bearer '+props.token}});if(!r.ok)throw new Error('下载失败，请刷新版本记录后重试。');url=URL.createObjectURL(await r.blob());const a=document.createElement('a');a.href=url;a.download=`${v.filename}_v${v.revision}.${v.has_pdf?'pdf':'md'}`;a.click()}catch(e){error.value=e instanceof Error?e.message:'下载失败'}finally{if(url)setTimeout(()=>URL.revokeObjectURL(url),1000);busy.value=false}}
+async function restore(){if(!chosen.value)return;busy.value=true;error.value='';try{await props.request(`/api/v1/documents/${props.documentId}/versions/restore`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({revision:chosen.value.revision,expected_revision:current.value,confirmed:true})});confirm.value=false;notice.value='已恢复所选内容，并保存为一个新版本。';emit('changed');page.value=1;await load()}catch(e){error.value=e instanceof Error?e.message:'恢复结果待核实，请刷新版本记录。'}finally{busy.value=false}}
+onMounted(load)
+</script>
+<template>
+ <DetailDialog title="资料版本记录" close-label="关闭版本记录" :close-disabled="busy" @close="emit('close')">
+  <p v-if="busy" role="status"><span class="ui-spinner"/>正在处理…</p><p v-if="error" role="alert">{{error}} <button :disabled="busy" @click="load">刷新版本记录</button></p><p v-if="notice" role="status">{{notice}}</p>
+  <p>当前内容版本 {{current}}。首次更新前的旧资料将在更新时留存可恢复快照。</p>
+  <div class="version-list"><article v-for="v in rows" :key="v.revision"><div><strong>{{v.filename}}</strong><small>内容版本 {{v.revision}} · {{v.page_count}}页 {{v.revision===current?'· 当前内容':''}}</small></div><div class="version-actions"><button :disabled="busy" @click="view(v)">查看</button><button :disabled="busy" @click="download(v)">下载{{v.has_pdf?'原文件':'文字'}}</button></div></article></div>
+  <p v-if="!rows.length&&!busy">这份资料还没有历史版本。重新上传完成后可在这里查看。</p>
+  <nav class="version-pager" aria-label="版本分页"><span>共{{total}}个版本 · 第{{page}}页</span><button :disabled="busy||page<=1" @click="page--;load()">上一页</button><button :disabled="busy||page*6>=total" @click="page++;load()">下一页</button></nav>
+  <section v-if="chosen" class="version-preview"><div class="version-actions"><strong>内容版本 {{chosen.revision}}</strong><button v-if="chosen.revision!==current" :disabled="busy" @click="confirm=true">恢复这个版本</button></div><article v-for="p in preview" :key="p.page_number"><h3>第{{p.page_number}}页</h3><pre>{{p.content}}</pre></article><nav class="version-pager" aria-label="版本原文分页"><button :disabled="busy||previewPage<=1" @click="view(chosen,previewPage-1)">上一页</button><span>{{previewPage}} / {{Math.max(1,Math.ceil(previewTotal/3))}}</span><button :disabled="busy||previewPage*3>=previewTotal" @click="view(chosen,previewPage+1)">下一页</button></nav></section>
+  <DetailDialog v-if="confirm" title="恢复资料内容？" size="small" :close-disabled="busy" @close="confirm=false"><p>所选内容会成为新版本，当前版本仍保留。请核对课程中的章节阅读页码；在线使用许可需要重新确认。</p><p v-if="error" role="alert">{{error}}</p><template #footer><button :disabled="busy" @click="confirm=false">继续核对</button><button :disabled="busy" @click="restore">确认恢复内容</button></template></DetailDialog>
+ </DetailDialog>
+</template>
+<style scoped>
+.version-list article{display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid #e4eaf4;padding:14px 0}.version-list article>div:first-child{min-width:0;overflow-wrap:anywhere}.version-list small{display:block;color:#7184a1;margin-top:5px}.version-actions,.version-pager{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.version-pager{justify-content:flex-end;margin:16px 0}.version-pager span{margin-right:auto;font-size:12px}.version-preview{border-top:1px solid #dfe7f2;padding-top:16px}.version-preview pre{white-space:pre-wrap;overflow-wrap:anywhere;font:inherit;line-height:1.8}.version-actions button,.version-pager button{min-height:40px;font-size:12px;padding:8px 12px}@media(max-width:520px){.version-list article{align-items:flex-start;flex-direction:column}.version-actions{width:100%}.version-actions button{flex:1}}
+</style>

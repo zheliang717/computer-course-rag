@@ -1,0 +1,15 @@
+# 文档目录
+
+- [项目介绍与快速开始](../README.md)
+- [设计与架构](architecture.md)
+- [部署手册](deployment-guide.md)
+- [完整换机迁移](simple-migration.md)
+- [Funnel HTTPS 入口](tailscale-funnel-guide.md)
+- [学生手册](student-guide.md)
+- [教师手册](teacher-guide.md)
+- [管理员手册](administrator-guide.md)
+- [课表管理](timetable-guide.md)
+- [开发路线](roadmap.md)
+- [资料与演示](../materials/README.md)
+- [参与开发](../CONTRIBUTING.md)
+- [许可证](../LICENSE) / [第三方声明](../THIRD_PARTY_NOTICES.md)

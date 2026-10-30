@@ -1,0 +1,19 @@
+{
+  "schema_version": 2,
+  "dataset_version": "mdn-http-overview-zh-10-v2",
+  "description": "固定版本 MDN《HTTP 概述》中文文字摘编的开发侧页级检索基线；8 条资料内问题按选取原文标注，2 条资料外问题。尚未经课程教师复核；不评价生成答案或向外部模型传输资料的许可。",
+  "knowledge_base_id": "a304f045-574e-4d6a-bb88-672427bedf35",
+  "case_count": 10,
+  "cases": [
+    {"id": "http-client", "kind": "positive", "question": "HTTP 客户端和服务器之间由谁发起请求？", "expected_documents": ["MDN Web Docs：HTTP 概述（中文文字摘编）"], "expected_pages": [1], "expected_terms_any": ["客户端", "用户代理"]},
+    {"id": "http-layers", "kind": "positive", "question": "路由器对 HTTP 应用层为什么通常是透明的？", "expected_documents": ["MDN Web Docs：HTTP 概述（中文文字摘编）"], "expected_pages": [1, 2], "expected_terms_any": ["网络层", "应用层"]},
+    {"id": "http-proxy", "kind": "positive", "question": "HTTP 代理如何进行缓存和负载均衡？", "expected_documents": ["MDN Web Docs：HTTP 概述（中文文字摘编）"], "expected_pages": [2], "expected_terms_any": ["缓存", "负载均衡"]},
+    {"id": "http-proxy-auth", "kind": "positive", "question": "HTTP 代理还可以承担过滤和认证吗？", "expected_documents": ["MDN Web Docs：HTTP 概述（中文文字摘编）"], "expected_pages": [2], "expected_terms_any": ["过滤", "认证"]},
+    {"id": "http-stateless-natural", "kind": "positive", "question": "HTTP 无状态为什么还能通过 Cookie 维护会话？", "expected_documents": ["MDN Web Docs：HTTP 概述（中文文字摘编）"], "expected_pages": [4], "expected_terms_any": ["无状态", "Cookie"]},
+    {"id": "http-headers", "kind": "positive", "question": "HTTP 标头怎样让协议具备可扩展性？", "expected_documents": ["MDN Web Docs：HTTP 概述（中文文字摘编）"], "expected_pages": [3], "expected_terms_any": ["标头", "扩展"]},
+    {"id": "http-request", "kind": "positive", "question": "HTTP 请求报文包含哪些元素？", "expected_documents": ["MDN Web Docs：HTTP 概述（中文文字摘编）"], "expected_pages": [5], "expected_terms_any": ["请求", "方法"]},
+    {"id": "http-response", "kind": "positive", "question": "HTTP 响应报文中的状态码和响应体各有什么位置？", "expected_documents": ["MDN Web Docs：HTTP 概述（中文文字摘编）"], "expected_pages": [5], "expected_terms_any": ["状态码", "响应"]},
+    {"id": "negative-cooking", "kind": "negative", "question": "提拉米苏的奶油怎么打发？", "expected_documents": [], "expected_terms_any": []},
+    {"id": "negative-music", "kind": "negative", "question": "莫扎特写了哪部歌剧？", "expected_documents": [], "expected_terms_any": []}
+  ]
+}

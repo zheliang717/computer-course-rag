@@ -1,0 +1,165 @@
+/* UX7: one usable phone viewport, rather than stacked desktop workspaces. */
+.ui-spinner { animation: ui-loading-spin .85s linear infinite; border: 2px solid currentColor; border-right-color: transparent; border-radius: 50%; display: inline-block; flex: none; height: 16px; margin-inline-end: 6px; vertical-align: middle; width: 16px; }
+@keyframes ui-loading-spin { to { transform: rotate(360deg); } }
+.page-loading-feedback { align-items: center; background: #eef5ff; border: 1px solid #d5e5f8; border-radius: 12px; color: #315f96; display: flex; font-size: 13px; gap: 5px; margin-bottom: 14px; padding: 12px 14px; }
+.assistant-context-shell { flex: none; min-height: 0; }
+.assistant-context-toggle { display: none; }
+.assistant-live-progress { align-items: center; background: #edf4ff; border-block: 1px solid #d7e5fb; color: #375d91; display: flex; flex: none; gap: 8px; padding: 10px 16px; }
+.assistant-live-progress > span:nth-child(2) { display: grid; flex: 1; gap: 3px; min-width: 0; }
+.assistant-live-progress strong { font-size: 12px; line-height: 1.5; overflow-wrap: anywhere; }
+.assistant-live-progress small { color: #6b7f9a; font-size: 10px; }
+.assistant-live-progress button { background: #fff; border: 1px solid #cbdcf3; color: #365d92; flex: none; font-size: 12px; min-height: 36px; padding: 7px 12px; }
+
+@media (max-width: 920px) {
+  /* Respect the actual content width when a browser reserves a vertical scrollbar. */
+  body { min-width: 0; }
+  :root {
+    --compact-body: clamp(12px, calc(10px + .8vw), 15px);
+    --compact-title: clamp(18px, calc(14px + 1.2vw), 25px);
+    --compact-section: clamp(15px, calc(12px + .9vw), 20px);
+    --compact-card: clamp(13px, calc(11px + .65vw), 16px);
+    --compact-button: clamp(11px, calc(9px + .8vw), 14px);
+    --compact-select: clamp(12px, calc(10px + .75vw), 15px);
+    --compact-pager-control: clamp(11px, calc(9px + .7vw), 13px);
+    --compact-metric: clamp(22px, calc(16px + 2vw), 32px);
+    --compact-answer: clamp(13px, calc(11px + .65vw), 16px);
+  }
+  #app { font-size: var(--compact-body); }
+  :is(#app, .detail-dialog) h1 { font-size: var(--compact-title); line-height: 1.4; }
+  :is(#app, .detail-dialog) h2 { font-size: var(--compact-section); line-height: 1.5; }
+  :is(#app, .detail-dialog) h3 { font-size: var(--compact-card); line-height: 1.6; }
+  :is(#app, .detail-dialog) h4 { font-size: var(--compact-body); line-height: 1.6; }
+  #app :is(.welcome-panel, .auth-card) h2, #app .auth-card h1 { font-size: var(--compact-title); }
+  :is(#app, .detail-dialog) button { font-size: var(--compact-button); }
+  #app :is(.metric-grid article, .student-home-metrics button) > strong,
+  #app :is(.report-head, .section-detail-metrics, .quota-cards button) > strong { font-size: var(--compact-metric); }
+  #app :is(.course-card, .recent-course, .task-row, .assignment-list, .question-list) strong { font-size: var(--compact-card); }
+  :is(#app, .detail-dialog) :is(.welcome-panel > p, .page-intro > p, .detail-description, .panel > p:not(.section-kicker)) { font-size: var(--compact-body); }
+  #app .home-task-row strong { font-size: var(--compact-section); }
+  :is(#app, .detail-dialog) .answer-markdown { font-size: var(--compact-answer); }
+  #app .detail-close, #app .assignment-sheet > header > button, .detail-dialog .detail-close { font-size: 22px; }
+  #global-ai-assistant .assistant-welcome h3 { font-size: var(--compact-title); }
+  #global-ai-assistant .assistant-welcome p, #global-ai-assistant .assistant-response .answer-markdown { font-size: var(--compact-answer); }
+  #global-ai-assistant .assistant-action-card > div strong,
+  #global-ai-assistant .assistant-history-item strong { font-size: var(--compact-card); }
+  #global-ai-assistant .assistant-identity strong { font-size: var(--compact-card); }
+  body.mobile-assistant-open { overflow: hidden; }
+  .platform-shell, .platform-main, .platform-page { min-width: 0; }
+  .model-admin-page, .model-config-panel, .model-config-panel .config-grid { grid-template-columns: minmax(0, 1fr); }
+  .model-admin-page > *, .model-config-panel > *, .model-config-panel label { min-width: 0; }
+  .model-config-panel .config-note { overflow-wrap: anywhere; }
+  .panel-heading { flex-wrap: wrap; gap: 10px; }
+  .panel-heading > div { min-width: 0; }
+  .panel-heading .count-label { font-size: var(--compact-button); max-width: 100%; overflow-wrap: anywhere; white-space: normal; }
+  :is(#app, #global-ai-assistant, .detail-dialog, .auth-shell) :is(input:not([type=checkbox]):not([type=radio]), textarea) { font-size: 16px; }
+  :is(#app, #global-ai-assistant, .detail-dialog, .auth-shell) select { font-size: var(--compact-select); }
+  :is(#app, #global-ai-assistant, .detail-dialog, .auth-shell) select option { font-size: inherit; }
+  :is(#app, #global-ai-assistant, .detail-dialog) .list-pager :is(input,select) { font-size: var(--compact-pager-control); min-height:40px; }
+  :is(#app, #global-ai-assistant, .detail-dialog) .list-pager input[type=number] { font-size: var(--compact-pager-control); height:40px; line-height:1.4; padding:6px 3px; text-align:center; appearance:textfield; }
+  :is(#app, #global-ai-assistant, .detail-dialog) .list-pager select { height:40px; line-height:1.4; padding:6px 22px 6px 8px; padding-right:22px!important; background-size:12px; background-position:right 7px center; }
+  .login-form button { align-items: center; display: flex; gap: 5px; justify-content: center; min-height: 46px; }
+  .platform-shell .platform-sidebar { padding: 10px 12px; }
+  .platform-shell .platform-brand { margin-bottom: 6px; padding-bottom: 8px; }
+  .platform-shell .brand-mark { height: 30px; width: 30px; }
+  .platform-shell .platform-sidebar .platform-navigation { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 4px; max-width: 100%; overflow: visible; padding-bottom: 0; }
+  .platform-shell .platform-sidebar .platform-navigation button { align-items: center; display: flex; flex-direction: column; font-size: 11px; gap: 3px; justify-content: center; min-height: 50px; min-width: 0; padding: 5px 2px; width: 100%; white-space: normal; line-height: 1.4; }
+  .platform-shell .platform-sidebar .platform-navigation button span { flex: none; height: 24px; width: 24px; font-size: 13px; }
+  #app .platform-sidebar .platform-navigation button { font-size: 11px; }
+  .platform-shell .platform-topbar { padding-block: 10px; }
+  .platform-shell .platform-topbar h1 { font-size: 20px; }
+  .topbar-account { gap: 6px; }
+  .topbar-account .account-avatar, .topbar-account-copy small { display: none; }
+  .topbar-account button { min-height: 40px; }
+  .platform-shell .global-assistant-panel.is-workspace,
+  .global-assistant-panel {
+    border: 0; border-radius: 0; box-shadow: none; bottom: auto; height: min(var(--assistant-visible-height, 100dvh), 100dvh);
+    left: 0; max-height: none; min-height: 0; outline: none; overflow: hidden; position: fixed;
+    right: 0; top: var(--assistant-visible-top, 0px); width: 100%; z-index: 90;
+  }
+  #global-ai-assistant .assistant-panel-header { flex: none; gap: 6px; min-height: 54px; padding: calc(7px + env(safe-area-inset-top, 0px)) 12px 7px; }
+  .global-assistant-panel .assistant-identity { gap: 8px; }
+  .global-assistant-panel .assistant-identity strong { font-size: 15px; white-space: nowrap; }
+  .global-assistant-panel .assistant-identity small { display: none; }
+  .global-assistant-panel .assistant-avatar { border-radius: 10px; height: 32px; width: 32px; }
+  .global-assistant-panel .assistant-header-actions button { min-height: 38px; padding: 8px; }
+  .global-assistant-panel .assistant-header-actions button:last-child { font-size: 12px; height: 38px; padding: 8px 10px; width: auto; }
+  .global-assistant-panel .assistant-panel-nav { flex: none; padding: 0 9px; }
+  .global-assistant-panel .assistant-panel-nav button { flex: 1; font-size: 13px; min-height: 42px; padding: 10px 7px; }
+  .assistant-context-shell { background: #fff; border-bottom: 1px solid #e2eaf6; max-height: 42%; overflow: auto; overscroll-behavior: contain; }
+  .assistant-context-toggle { align-items: center; background: #f7faff; border-radius: 0; color: #365a87; display: flex; gap: 8px; min-height: 48px; padding: 7px 13px; text-align: left; width: 100%; }
+  .assistant-context-toggle > span:first-child { display: grid; flex: 1; gap: 3px; min-width: 0; }
+  .assistant-context-toggle strong { font-size: 12px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .assistant-context-toggle small { color: #768aa5; font-size: 10px; }
+  .assistant-context-toggle b { flex: none; font-size: 11px; }
+  #global-ai-assistant .assistant-fixed-context { max-height: none; padding: 8px 12px 10px; }
+  .assistant-context-shell:not(.is-expanded) > .assistant-fixed-context { display: none; }
+  #global-ai-assistant .assistant-chat-context select { font-size: var(--compact-select); max-width: 100%; }
+  .global-assistant-panel .assistant-answer-modes { gap: 5px; }
+  .global-assistant-panel .assistant-answer-modes button { flex: 1; font-size: 12px; min-height: 40px; padding: 7px 4px; }
+  .global-assistant-panel .assistant-chat-scroll { flex: 1 1 0; min-height: 0; padding: 14px 12px 22px; }
+  .global-assistant-panel .assistant-welcome { padding: 20px 1px 10px; }
+  .global-assistant-panel .assistant-welcome-icon { display: none; }
+  .global-assistant-panel .assistant-welcome h3 { font-size: 21px; line-height: 1.5; }
+  .global-assistant-panel .assistant-welcome p { font-size: 14px; }
+  .global-assistant-panel .assistant-welcome-examples { gap: 8px; grid-template-columns: 1fr; margin-top: 18px; }
+  .global-assistant-panel .assistant-welcome-examples button { font-size: 13px; min-height: 46px; }
+  .global-assistant-panel .assistant-response { padding: 13px 12px; }
+  .global-assistant-panel .assistant-response .answer-markdown { font-size: 15px; line-height: 1.85; }
+  .global-assistant-panel .assistant-answer-heading { flex-wrap: wrap; gap: 6px; }
+  .global-assistant-panel .assistant-answer-heading > div { flex: 1; min-width: 0; }
+  .global-assistant-panel .assistant-prompt-strip { display: none; }
+  #global-ai-assistant .assistant-composer { flex: none; margin: 0; padding: 8px 12px calc(8px + env(safe-area-inset-bottom, 0px)); }
+  #global-ai-assistant .assistant-composer textarea { font-size: 16px; min-height: 46px; max-height: min(140px, 24dvh); }
+  .global-assistant-panel .assistant-composer .prompt-composer-hint { font-size: 10px; }
+  .global-assistant-panel .assistant-history-scroll, .global-assistant-panel .assistant-tools-scroll { padding: 14px 12px; }
+  .global-assistant-panel .assistant-draft-context, .global-assistant-panel .assistant-study-plan, .global-assistant-panel .assistant-study-notes, .global-assistant-panel .assistant-report { margin-inline: 0; }
+  .global-assistant-panel .assistant-action-section { padding-inline: 0; }
+  #global-ai-assistant .assistant-action-card > div strong, #global-ai-assistant .assistant-history-item strong { font-size: var(--compact-card); }
+  #global-ai-assistant .assistant-action-card > div small, #global-ai-assistant .assistant-history-item span { font-size: 12px; }
+  #global-ai-assistant .assistant-draft-context label, #global-ai-assistant .assistant-draft-context p { font-size: 12px; line-height: 1.7; }
+  .assistant-live-progress { padding: 8px 12px; }
+  .assistant-live-progress small { font-size: 10px; }
+  .assistant-thinking-body strong, .assistant-thinking-body small { font-size: 12px; line-height: 1.6; }
+  .assistant-return-latest { flex: none; }
+  .assistant-return-latest > span { display: none; }
+  .list-pager { gap: 7px; }
+  .list-pager > span { flex-basis: 100%; }
+  .list-pager :is(button, select) { min-height: 40px; }
+  .list-pager form { align-items: center; display: flex; gap: 6px; }
+  .list-pager form input { max-width: 65px; }
+  #app .platform-main .list-pager { padding-inline-end: 0; }
+  #app .platform-main { padding-bottom: 76px; }
+  .account-manager .list-pager { display:grid; grid-template-columns:minmax(0,1fr) auto; }
+  .account-manager .list-pager>span { grid-column:1/-1; }
+  .account-manager .pager-step-buttons { display:flex; gap:4px; flex-wrap:nowrap; }
+  .account-manager .pager-step-buttons button { padding:8px; white-space:nowrap; min-height:40px; }
+  :is(#app,.detail-dialog) :is(.review-pagination,.decision-pages,.basis-pages) { display:grid; grid-template-columns:repeat(2,max-content); justify-content:end; gap:8px; }
+  :is(#app,.detail-dialog) :is(.review-pagination,.decision-pages,.basis-pages)>:is(span,small) { grid-column:1/-1; }
+  :is(#app,.detail-dialog) :is(.review-pagination,.decision-pages,.basis-pages,.tt-pager) button { min-height:40px; white-space:nowrap; }
+  .course-detail-tabs { flex-wrap: nowrap; overflow-x: auto; }
+  .course-detail-tabs button { flex: none; min-height: 42px; }
+  dialog.detail-dialog[open] { bottom: auto; height: min(var(--app-visual-height, 100dvh), 100dvh); margin: 0; max-height: min(var(--app-visual-height, 100dvh), 100dvh); padding: 8px; top: var(--app-visual-top, 0px); }
+  dialog.detail-dialog .detail-dialog-frame { max-height: calc(min(var(--app-visual-height, 100dvh), 100dvh) - 16px); }
+  dialog.detail-dialog .detail-close { height: 44px; width: 44px; }
+  .platform-shell .assignment-modal { bottom: auto; height: min(var(--app-visual-height, 100dvh), 100dvh); padding: 8px; top: var(--app-visual-top, 0px); z-index: 100; }
+  .platform-shell .assignment-sheet { max-height: calc(min(var(--app-visual-height, 100dvh), 100dvh) - 16px); }
+  .platform-shell .assignment-sheet > header > button { min-height: 44px; min-width: 44px; }
+}
+
+@media (max-width: 920px) and (max-height: 520px) {
+  #global-ai-assistant .assistant-panel-header { min-height: 46px; padding-block: 4px; }
+  .global-assistant-panel .assistant-panel-nav button { min-height: 36px; padding-block: 6px; }
+  .assistant-context-toggle { min-height: 36px; padding-block: 5px; }
+  .assistant-context-toggle small, .global-assistant-panel .prompt-composer-hint { display: none; }
+  #global-ai-assistant .assistant-composer { align-items: end; grid-template-columns: minmax(0, 1fr) auto; padding-block: 5px; }
+  #global-ai-assistant .assistant-composer textarea { max-height: 70px; }
+  .assistant-live-progress small { display: none; }
+  dialog.detail-dialog .detail-dialog-heading { padding-block: 9px; }
+  dialog.detail-dialog .detail-description { display: none; }
+  dialog.detail-dialog .detail-dialog-heading .section-kicker { display: none; }
+  dialog.detail-dialog .detail-dialog-heading h2 { font-size: 16px; line-height: 1.45; }
+  .assignment-sheet > header > div > p:not(.section-kicker) { font-size: 12px; line-height: 1.5; max-height: 3em; overflow: auto; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ui-spinner { animation: none; border-style: dotted; }
+}

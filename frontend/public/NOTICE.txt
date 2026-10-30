@@ -1,0 +1,6 @@
+Zhixue Assistant / 智学助手
+Copyright (C) 2026 zheliang717
+SPDX-License-Identifier: AGPL-3.0-only
+Source: https://github.com/zheliang717/computer-course-rag
+License: /LICENSE.txt
+Third-party dependencies retain their own licenses. See THIRD_PARTY_NOTICES.md in the source repository.

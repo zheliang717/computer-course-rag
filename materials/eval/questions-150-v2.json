@@ -1,0 +1,2308 @@
+{
+  "schema_version": 3,
+  "dataset_version": "dsa-zh-150-v2",
+  "knowledge_base_id": "87f474ab-352c-51b5-a04d-604bbe9290dd",
+  "description": "120 条课程内标注检索问题和 30 条资料外拒答问题；v2 用来源稳定 ID 标注目标资料，并按第 13 讲封面更正《基础算法》书名。",
+  "source_correction": {
+    "source_id": "tsinghua-dsa-greedy-dp",
+    "official_title": "数据结构与算法：基础算法",
+    "source_url": "https://pacman.cs.tsinghua.edu.cn/~hanwentao/dsa/13-algorithm-handout.pdf",
+    "sha256": "BEEA7A515D93A019835D453421AB37285A4873C173B768EB5C6B0BB7032AF966",
+    "note": "v1 的《贪心与动态规划》是旧展示名；原 PDF 封面为第 13 讲《基础算法》，正文覆盖贪心法、动态规划与 0-1 背包。"
+  },
+  "case_count": 150,
+  "cases": [
+    {
+      "id": "data-structure-elements-001",
+      "kind": "positive",
+      "topic": "data-structure-elements",
+      "question": "请解释数据结构由哪些基本要素构成？",
+      "expected_documents": [
+        "数据结构与算法：概论"
+      ],
+      "expected_document_ids": [
+        "eb06d8d7-5611-5b3c-96c1-21861c054bd2"
+      ],
+      "expected_terms_any": [
+        "逻辑结构",
+        "存储结构",
+        "操作"
+      ]
+    },
+    {
+      "id": "data-structure-elements-002",
+      "kind": "positive",
+      "topic": "data-structure-elements",
+      "question": "请解释数据结构由哪些基本要素构成，并指出核心概念。",
+      "expected_documents": [
+        "数据结构与算法：概论"
+      ],
+      "expected_document_ids": [
+        "eb06d8d7-5611-5b3c-96c1-21861c054bd2"
+      ],
+      "expected_terms_any": [
+        "逻辑结构",
+        "存储结构",
+        "操作"
+      ]
+    },
+    {
+      "id": "data-structure-elements-003",
+      "kind": "positive",
+      "topic": "data-structure-elements",
+      "question": "请解释数据结构由哪些基本要素构成，其判断依据是什么？",
+      "expected_documents": [
+        "数据结构与算法：概论"
+      ],
+      "expected_document_ids": [
+        "eb06d8d7-5611-5b3c-96c1-21861c054bd2"
+      ],
+      "expected_terms_any": [
+        "逻辑结构",
+        "存储结构",
+        "操作"
+      ]
+    },
+    {
+      "id": "data-structure-elements-004",
+      "kind": "positive",
+      "topic": "data-structure-elements",
+      "question": "从课程资料看数据结构由哪些基本要素构成？",
+      "expected_documents": [
+        "数据结构与算法：概论"
+      ],
+      "expected_document_ids": [
+        "eb06d8d7-5611-5b3c-96c1-21861c054bd2"
+      ],
+      "expected_terms_any": [
+        "逻辑结构",
+        "存储结构",
+        "操作"
+      ]
+    },
+    {
+      "id": "data-structure-elements-005",
+      "kind": "positive",
+      "topic": "data-structure-elements",
+      "question": "从课程资料看数据结构由哪些基本要素构成，并指出核心概念。",
+      "expected_documents": [
+        "数据结构与算法：概论"
+      ],
+      "expected_document_ids": [
+        "eb06d8d7-5611-5b3c-96c1-21861c054bd2"
+      ],
+      "expected_terms_any": [
+        "逻辑结构",
+        "存储结构",
+        "操作"
+      ]
+    },
+    {
+      "id": "data-structure-elements-006",
+      "kind": "positive",
+      "topic": "data-structure-elements",
+      "question": "从课程资料看数据结构由哪些基本要素构成，其判断依据是什么？",
+      "expected_documents": [
+        "数据结构与算法：概论"
+      ],
+      "expected_document_ids": [
+        "eb06d8d7-5611-5b3c-96c1-21861c054bd2"
+      ],
+      "expected_terms_any": [
+        "逻辑结构",
+        "存储结构",
+        "操作"
+      ]
+    },
+    {
+      "id": "data-structure-elements-007",
+      "kind": "positive",
+      "topic": "data-structure-elements",
+      "question": "请用定义说明数据结构由哪些基本要素构成？",
+      "expected_documents": [
+        "数据结构与算法：概论"
+      ],
+      "expected_document_ids": [
+        "eb06d8d7-5611-5b3c-96c1-21861c054bd2"
+      ],
+      "expected_terms_any": [
+        "逻辑结构",
+        "存储结构",
+        "操作"
+      ]
+    },
+    {
+      "id": "data-structure-elements-008",
+      "kind": "positive",
+      "topic": "data-structure-elements",
+      "question": "请用定义说明数据结构由哪些基本要素构成，并指出核心概念。",
+      "expected_documents": [
+        "数据结构与算法：概论"
+      ],
+      "expected_document_ids": [
+        "eb06d8d7-5611-5b3c-96c1-21861c054bd2"
+      ],
+      "expected_terms_any": [
+        "逻辑结构",
+        "存储结构",
+        "操作"
+      ]
+    },
+    {
+      "id": "data-structure-elements-009",
+      "kind": "positive",
+      "topic": "data-structure-elements",
+      "question": "请用定义说明数据结构由哪些基本要素构成，其判断依据是什么？",
+      "expected_documents": [
+        "数据结构与算法：概论"
+      ],
+      "expected_document_ids": [
+        "eb06d8d7-5611-5b3c-96c1-21861c054bd2"
+      ],
+      "expected_terms_any": [
+        "逻辑结构",
+        "存储结构",
+        "操作"
+      ]
+    },
+    {
+      "id": "data-structure-elements-010",
+      "kind": "positive",
+      "topic": "data-structure-elements",
+      "question": "复习时应如何理解数据结构由哪些基本要素构成？",
+      "expected_documents": [
+        "数据结构与算法：概论"
+      ],
+      "expected_document_ids": [
+        "eb06d8d7-5611-5b3c-96c1-21861c054bd2"
+      ],
+      "expected_terms_any": [
+        "逻辑结构",
+        "存储结构",
+        "操作"
+      ]
+    },
+    {
+      "id": "data-structure-elements-011",
+      "kind": "positive",
+      "topic": "data-structure-elements",
+      "question": "复习时应如何理解数据结构由哪些基本要素构成，并指出核心概念。",
+      "expected_documents": [
+        "数据结构与算法：概论"
+      ],
+      "expected_document_ids": [
+        "eb06d8d7-5611-5b3c-96c1-21861c054bd2"
+      ],
+      "expected_terms_any": [
+        "逻辑结构",
+        "存储结构",
+        "操作"
+      ]
+    },
+    {
+      "id": "data-structure-elements-012",
+      "kind": "positive",
+      "topic": "data-structure-elements",
+      "question": "复习时应如何理解数据结构由哪些基本要素构成，其判断依据是什么？",
+      "expected_documents": [
+        "数据结构与算法：概论"
+      ],
+      "expected_document_ids": [
+        "eb06d8d7-5611-5b3c-96c1-21861c054bd2"
+      ],
+      "expected_terms_any": [
+        "逻辑结构",
+        "存储结构",
+        "操作"
+      ]
+    },
+    {
+      "id": "algorithm-complexity-013",
+      "kind": "positive",
+      "topic": "algorithm-complexity",
+      "question": "请解释算法的时间复杂度和空间复杂度如何衡量？",
+      "expected_documents": [
+        "数据结构与算法：概论"
+      ],
+      "expected_document_ids": [
+        "eb06d8d7-5611-5b3c-96c1-21861c054bd2"
+      ],
+      "expected_terms_any": [
+        "时间复杂度",
+        "空间复杂度",
+        "复杂度"
+      ]
+    },
+    {
+      "id": "algorithm-complexity-014",
+      "kind": "positive",
+      "topic": "algorithm-complexity",
+      "question": "请解释算法的时间复杂度和空间复杂度如何衡量，并指出核心概念。",
+      "expected_documents": [
+        "数据结构与算法：概论"
+      ],
+      "expected_document_ids": [
+        "eb06d8d7-5611-5b3c-96c1-21861c054bd2"
+      ],
+      "expected_terms_any": [
+        "时间复杂度",
+        "空间复杂度",
+        "复杂度"
+      ]
+    },
+    {
+      "id": "algorithm-complexity-015",
+      "kind": "positive",
+      "topic": "algorithm-complexity",
+      "question": "请解释算法的时间复杂度和空间复杂度如何衡量，其判断依据是什么？",
+      "expected_documents": [
+        "数据结构与算法：概论"
+      ],
+      "expected_document_ids": [
+        "eb06d8d7-5611-5b3c-96c1-21861c054bd2"
+      ],
+      "expected_terms_any": [
+        "时间复杂度",
+        "空间复杂度",
+        "复杂度"
+      ]
+    },
+    {
+      "id": "algorithm-complexity-016",
+      "kind": "positive",
+      "topic": "algorithm-complexity",
+      "question": "从课程资料看算法的时间复杂度和空间复杂度如何衡量？",
+      "expected_documents": [
+        "数据结构与算法：概论"
+      ],
+      "expected_document_ids": [
+        "eb06d8d7-5611-5b3c-96c1-21861c054bd2"
+      ],
+      "expected_terms_any": [
+        "时间复杂度",
+        "空间复杂度",
+        "复杂度"
+      ]
+    },
+    {
+      "id": "algorithm-complexity-017",
+      "kind": "positive",
+      "topic": "algorithm-complexity",
+      "question": "从课程资料看算法的时间复杂度和空间复杂度如何衡量，并指出核心概念。",
+      "expected_documents": [
+        "数据结构与算法：概论"
+      ],
+      "expected_document_ids": [
+        "eb06d8d7-5611-5b3c-96c1-21861c054bd2"
+      ],
+      "expected_terms_any": [
+        "时间复杂度",
+        "空间复杂度",
+        "复杂度"
+      ]
+    },
+    {
+      "id": "algorithm-complexity-018",
+      "kind": "positive",
+      "topic": "algorithm-complexity",
+      "question": "从课程资料看算法的时间复杂度和空间复杂度如何衡量，其判断依据是什么？",
+      "expected_documents": [
+        "数据结构与算法：概论"
+      ],
+      "expected_document_ids": [
+        "eb06d8d7-5611-5b3c-96c1-21861c054bd2"
+      ],
+      "expected_terms_any": [
+        "时间复杂度",
+        "空间复杂度",
+        "复杂度"
+      ]
+    },
+    {
+      "id": "algorithm-complexity-019",
+      "kind": "positive",
+      "topic": "algorithm-complexity",
+      "question": "请用定义说明算法的时间复杂度和空间复杂度如何衡量？",
+      "expected_documents": [
+        "数据结构与算法：概论"
+      ],
+      "expected_document_ids": [
+        "eb06d8d7-5611-5b3c-96c1-21861c054bd2"
+      ],
+      "expected_terms_any": [
+        "时间复杂度",
+        "空间复杂度",
+        "复杂度"
+      ]
+    },
+    {
+      "id": "algorithm-complexity-020",
+      "kind": "positive",
+      "topic": "algorithm-complexity",
+      "question": "请用定义说明算法的时间复杂度和空间复杂度如何衡量，并指出核心概念。",
+      "expected_documents": [
+        "数据结构与算法：概论"
+      ],
+      "expected_document_ids": [
+        "eb06d8d7-5611-5b3c-96c1-21861c054bd2"
+      ],
+      "expected_terms_any": [
+        "时间复杂度",
+        "空间复杂度",
+        "复杂度"
+      ]
+    },
+    {
+      "id": "algorithm-complexity-021",
+      "kind": "positive",
+      "topic": "algorithm-complexity",
+      "question": "请用定义说明算法的时间复杂度和空间复杂度如何衡量，其判断依据是什么？",
+      "expected_documents": [
+        "数据结构与算法：概论"
+      ],
+      "expected_document_ids": [
+        "eb06d8d7-5611-5b3c-96c1-21861c054bd2"
+      ],
+      "expected_terms_any": [
+        "时间复杂度",
+        "空间复杂度",
+        "复杂度"
+      ]
+    },
+    {
+      "id": "algorithm-complexity-022",
+      "kind": "positive",
+      "topic": "algorithm-complexity",
+      "question": "复习时应如何理解算法的时间复杂度和空间复杂度如何衡量？",
+      "expected_documents": [
+        "数据结构与算法：概论"
+      ],
+      "expected_document_ids": [
+        "eb06d8d7-5611-5b3c-96c1-21861c054bd2"
+      ],
+      "expected_terms_any": [
+        "时间复杂度",
+        "空间复杂度",
+        "复杂度"
+      ]
+    },
+    {
+      "id": "algorithm-complexity-023",
+      "kind": "positive",
+      "topic": "algorithm-complexity",
+      "question": "复习时应如何理解算法的时间复杂度和空间复杂度如何衡量，并指出核心概念。",
+      "expected_documents": [
+        "数据结构与算法：概论"
+      ],
+      "expected_document_ids": [
+        "eb06d8d7-5611-5b3c-96c1-21861c054bd2"
+      ],
+      "expected_terms_any": [
+        "时间复杂度",
+        "空间复杂度",
+        "复杂度"
+      ]
+    },
+    {
+      "id": "algorithm-complexity-024",
+      "kind": "positive",
+      "topic": "algorithm-complexity",
+      "question": "复习时应如何理解算法的时间复杂度和空间复杂度如何衡量，其判断依据是什么？",
+      "expected_documents": [
+        "数据结构与算法：概论"
+      ],
+      "expected_document_ids": [
+        "eb06d8d7-5611-5b3c-96c1-21861c054bd2"
+      ],
+      "expected_terms_any": [
+        "时间复杂度",
+        "空间复杂度",
+        "复杂度"
+      ]
+    },
+    {
+      "id": "tree-concepts-025",
+      "kind": "positive",
+      "topic": "tree-concepts",
+      "question": "请解释树结构中的根、结点和子树是什么关系？",
+      "expected_documents": [
+        "数据结构与算法：树与二叉树"
+      ],
+      "expected_document_ids": [
+        "79e653dd-ef00-5010-99d3-43718766d4e5"
+      ],
+      "expected_terms_any": [
+        "根",
+        "结点",
+        "子树"
+      ]
+    },
+    {
+      "id": "tree-concepts-026",
+      "kind": "positive",
+      "topic": "tree-concepts",
+      "question": "请解释树结构中的根、结点和子树是什么关系，并指出核心概念。",
+      "expected_documents": [
+        "数据结构与算法：树与二叉树"
+      ],
+      "expected_document_ids": [
+        "79e653dd-ef00-5010-99d3-43718766d4e5"
+      ],
+      "expected_terms_any": [
+        "根",
+        "结点",
+        "子树"
+      ]
+    },
+    {
+      "id": "tree-concepts-027",
+      "kind": "positive",
+      "topic": "tree-concepts",
+      "question": "请解释树结构中的根、结点和子树是什么关系，其判断依据是什么？",
+      "expected_documents": [
+        "数据结构与算法：树与二叉树"
+      ],
+      "expected_document_ids": [
+        "79e653dd-ef00-5010-99d3-43718766d4e5"
+      ],
+      "expected_terms_any": [
+        "根",
+        "结点",
+        "子树"
+      ]
+    },
+    {
+      "id": "tree-concepts-028",
+      "kind": "positive",
+      "topic": "tree-concepts",
+      "question": "从课程资料看树结构中的根、结点和子树是什么关系？",
+      "expected_documents": [
+        "数据结构与算法：树与二叉树"
+      ],
+      "expected_document_ids": [
+        "79e653dd-ef00-5010-99d3-43718766d4e5"
+      ],
+      "expected_terms_any": [
+        "根",
+        "结点",
+        "子树"
+      ]
+    },
+    {
+      "id": "tree-concepts-029",
+      "kind": "positive",
+      "topic": "tree-concepts",
+      "question": "从课程资料看树结构中的根、结点和子树是什么关系，并指出核心概念。",
+      "expected_documents": [
+        "数据结构与算法：树与二叉树"
+      ],
+      "expected_document_ids": [
+        "79e653dd-ef00-5010-99d3-43718766d4e5"
+      ],
+      "expected_terms_any": [
+        "根",
+        "结点",
+        "子树"
+      ]
+    },
+    {
+      "id": "tree-concepts-030",
+      "kind": "positive",
+      "topic": "tree-concepts",
+      "question": "从课程资料看树结构中的根、结点和子树是什么关系，其判断依据是什么？",
+      "expected_documents": [
+        "数据结构与算法：树与二叉树"
+      ],
+      "expected_document_ids": [
+        "79e653dd-ef00-5010-99d3-43718766d4e5"
+      ],
+      "expected_terms_any": [
+        "根",
+        "结点",
+        "子树"
+      ]
+    },
+    {
+      "id": "tree-concepts-031",
+      "kind": "positive",
+      "topic": "tree-concepts",
+      "question": "请用定义说明树结构中的根、结点和子树是什么关系？",
+      "expected_documents": [
+        "数据结构与算法：树与二叉树"
+      ],
+      "expected_document_ids": [
+        "79e653dd-ef00-5010-99d3-43718766d4e5"
+      ],
+      "expected_terms_any": [
+        "根",
+        "结点",
+        "子树"
+      ]
+    },
+    {
+      "id": "tree-concepts-032",
+      "kind": "positive",
+      "topic": "tree-concepts",
+      "question": "请用定义说明树结构中的根、结点和子树是什么关系，并指出核心概念。",
+      "expected_documents": [
+        "数据结构与算法：树与二叉树"
+      ],
+      "expected_document_ids": [
+        "79e653dd-ef00-5010-99d3-43718766d4e5"
+      ],
+      "expected_terms_any": [
+        "根",
+        "结点",
+        "子树"
+      ]
+    },
+    {
+      "id": "tree-concepts-033",
+      "kind": "positive",
+      "topic": "tree-concepts",
+      "question": "请用定义说明树结构中的根、结点和子树是什么关系，其判断依据是什么？",
+      "expected_documents": [
+        "数据结构与算法：树与二叉树"
+      ],
+      "expected_document_ids": [
+        "79e653dd-ef00-5010-99d3-43718766d4e5"
+      ],
+      "expected_terms_any": [
+        "根",
+        "结点",
+        "子树"
+      ]
+    },
+    {
+      "id": "tree-concepts-034",
+      "kind": "positive",
+      "topic": "tree-concepts",
+      "question": "复习时应如何理解树结构中的根、结点和子树是什么关系？",
+      "expected_documents": [
+        "数据结构与算法：树与二叉树"
+      ],
+      "expected_document_ids": [
+        "79e653dd-ef00-5010-99d3-43718766d4e5"
+      ],
+      "expected_terms_any": [
+        "根",
+        "结点",
+        "子树"
+      ]
+    },
+    {
+      "id": "tree-concepts-035",
+      "kind": "positive",
+      "topic": "tree-concepts",
+      "question": "复习时应如何理解树结构中的根、结点和子树是什么关系，并指出核心概念。",
+      "expected_documents": [
+        "数据结构与算法：树与二叉树"
+      ],
+      "expected_document_ids": [
+        "79e653dd-ef00-5010-99d3-43718766d4e5"
+      ],
+      "expected_terms_any": [
+        "根",
+        "结点",
+        "子树"
+      ]
+    },
+    {
+      "id": "tree-concepts-036",
+      "kind": "positive",
+      "topic": "tree-concepts",
+      "question": "复习时应如何理解树结构中的根、结点和子树是什么关系，其判断依据是什么？",
+      "expected_documents": [
+        "数据结构与算法：树与二叉树"
+      ],
+      "expected_document_ids": [
+        "79e653dd-ef00-5010-99d3-43718766d4e5"
+      ],
+      "expected_terms_any": [
+        "根",
+        "结点",
+        "子树"
+      ]
+    },
+    {
+      "id": "binary-tree-traversal-037",
+      "kind": "positive",
+      "topic": "binary-tree-traversal",
+      "question": "请解释二叉树的先序、中序和后序遍历有何区别？",
+      "expected_documents": [
+        "数据结构与算法：树与二叉树"
+      ],
+      "expected_document_ids": [
+        "79e653dd-ef00-5010-99d3-43718766d4e5"
+      ],
+      "expected_terms_any": [
+        "先序",
+        "中序",
+        "后序",
+        "遍历"
+      ]
+    },
+    {
+      "id": "binary-tree-traversal-038",
+      "kind": "positive",
+      "topic": "binary-tree-traversal",
+      "question": "请解释二叉树的先序、中序和后序遍历有何区别，并指出核心概念。",
+      "expected_documents": [
+        "数据结构与算法：树与二叉树"
+      ],
+      "expected_document_ids": [
+        "79e653dd-ef00-5010-99d3-43718766d4e5"
+      ],
+      "expected_terms_any": [
+        "先序",
+        "中序",
+        "后序",
+        "遍历"
+      ]
+    },
+    {
+      "id": "binary-tree-traversal-039",
+      "kind": "positive",
+      "topic": "binary-tree-traversal",
+      "question": "请解释二叉树的先序、中序和后序遍历有何区别，其判断依据是什么？",
+      "expected_documents": [
+        "数据结构与算法：树与二叉树"
+      ],
+      "expected_document_ids": [
+        "79e653dd-ef00-5010-99d3-43718766d4e5"
+      ],
+      "expected_terms_any": [
+        "先序",
+        "中序",
+        "后序",
+        "遍历"
+      ]
+    },
+    {
+      "id": "binary-tree-traversal-040",
+      "kind": "positive",
+      "topic": "binary-tree-traversal",
+      "question": "从课程资料看二叉树的先序、中序和后序遍历有何区别？",
+      "expected_documents": [
+        "数据结构与算法：树与二叉树"
+      ],
+      "expected_document_ids": [
+        "79e653dd-ef00-5010-99d3-43718766d4e5"
+      ],
+      "expected_terms_any": [
+        "先序",
+        "中序",
+        "后序",
+        "遍历"
+      ]
+    },
+    {
+      "id": "binary-tree-traversal-041",
+      "kind": "positive",
+      "topic": "binary-tree-traversal",
+      "question": "从课程资料看二叉树的先序、中序和后序遍历有何区别，并指出核心概念。",
+      "expected_documents": [
+        "数据结构与算法：树与二叉树"
+      ],
+      "expected_document_ids": [
+        "79e653dd-ef00-5010-99d3-43718766d4e5"
+      ],
+      "expected_terms_any": [
+        "先序",
+        "中序",
+        "后序",
+        "遍历"
+      ]
+    },
+    {
+      "id": "binary-tree-traversal-042",
+      "kind": "positive",
+      "topic": "binary-tree-traversal",
+      "question": "从课程资料看二叉树的先序、中序和后序遍历有何区别，其判断依据是什么？",
+      "expected_documents": [
+        "数据结构与算法：树与二叉树"
+      ],
+      "expected_document_ids": [
+        "79e653dd-ef00-5010-99d3-43718766d4e5"
+      ],
+      "expected_terms_any": [
+        "先序",
+        "中序",
+        "后序",
+        "遍历"
+      ]
+    },
+    {
+      "id": "binary-tree-traversal-043",
+      "kind": "positive",
+      "topic": "binary-tree-traversal",
+      "question": "请用定义说明二叉树的先序、中序和后序遍历有何区别？",
+      "expected_documents": [
+        "数据结构与算法：树与二叉树"
+      ],
+      "expected_document_ids": [
+        "79e653dd-ef00-5010-99d3-43718766d4e5"
+      ],
+      "expected_terms_any": [
+        "先序",
+        "中序",
+        "后序",
+        "遍历"
+      ]
+    },
+    {
+      "id": "binary-tree-traversal-044",
+      "kind": "positive",
+      "topic": "binary-tree-traversal",
+      "question": "请用定义说明二叉树的先序、中序和后序遍历有何区别，并指出核心概念。",
+      "expected_documents": [
+        "数据结构与算法：树与二叉树"
+      ],
+      "expected_document_ids": [
+        "79e653dd-ef00-5010-99d3-43718766d4e5"
+      ],
+      "expected_terms_any": [
+        "先序",
+        "中序",
+        "后序",
+        "遍历"
+      ]
+    },
+    {
+      "id": "binary-tree-traversal-045",
+      "kind": "positive",
+      "topic": "binary-tree-traversal",
+      "question": "请用定义说明二叉树的先序、中序和后序遍历有何区别，其判断依据是什么？",
+      "expected_documents": [
+        "数据结构与算法：树与二叉树"
+      ],
+      "expected_document_ids": [
+        "79e653dd-ef00-5010-99d3-43718766d4e5"
+      ],
+      "expected_terms_any": [
+        "先序",
+        "中序",
+        "后序",
+        "遍历"
+      ]
+    },
+    {
+      "id": "binary-tree-traversal-046",
+      "kind": "positive",
+      "topic": "binary-tree-traversal",
+      "question": "复习时应如何理解二叉树的先序、中序和后序遍历有何区别？",
+      "expected_documents": [
+        "数据结构与算法：树与二叉树"
+      ],
+      "expected_document_ids": [
+        "79e653dd-ef00-5010-99d3-43718766d4e5"
+      ],
+      "expected_terms_any": [
+        "先序",
+        "中序",
+        "后序",
+        "遍历"
+      ]
+    },
+    {
+      "id": "binary-tree-traversal-047",
+      "kind": "positive",
+      "topic": "binary-tree-traversal",
+      "question": "复习时应如何理解二叉树的先序、中序和后序遍历有何区别，并指出核心概念。",
+      "expected_documents": [
+        "数据结构与算法：树与二叉树"
+      ],
+      "expected_document_ids": [
+        "79e653dd-ef00-5010-99d3-43718766d4e5"
+      ],
+      "expected_terms_any": [
+        "先序",
+        "中序",
+        "后序",
+        "遍历"
+      ]
+    },
+    {
+      "id": "binary-tree-traversal-048",
+      "kind": "positive",
+      "topic": "binary-tree-traversal",
+      "question": "复习时应如何理解二叉树的先序、中序和后序遍历有何区别，其判断依据是什么？",
+      "expected_documents": [
+        "数据结构与算法：树与二叉树"
+      ],
+      "expected_document_ids": [
+        "79e653dd-ef00-5010-99d3-43718766d4e5"
+      ],
+      "expected_terms_any": [
+        "先序",
+        "中序",
+        "后序",
+        "遍历"
+      ]
+    },
+    {
+      "id": "bst-definition-049",
+      "kind": "positive",
+      "topic": "bst-definition",
+      "question": "请解释二叉查找树对左右子树关键字有什么约束？",
+      "expected_documents": [
+        "数据结构与算法：二叉查找树"
+      ],
+      "expected_document_ids": [
+        "15202989-2dee-5ff7-8d37-bc8d0c03524c"
+      ],
+      "expected_terms_any": [
+        "左子树",
+        "右子树",
+        "关键字"
+      ]
+    },
+    {
+      "id": "bst-definition-050",
+      "kind": "positive",
+      "topic": "bst-definition",
+      "question": "请解释二叉查找树对左右子树关键字有什么约束，并指出核心概念。",
+      "expected_documents": [
+        "数据结构与算法：二叉查找树"
+      ],
+      "expected_document_ids": [
+        "15202989-2dee-5ff7-8d37-bc8d0c03524c"
+      ],
+      "expected_terms_any": [
+        "左子树",
+        "右子树",
+        "关键字"
+      ]
+    },
+    {
+      "id": "bst-definition-051",
+      "kind": "positive",
+      "topic": "bst-definition",
+      "question": "请解释二叉查找树对左右子树关键字有什么约束，其判断依据是什么？",
+      "expected_documents": [
+        "数据结构与算法：二叉查找树"
+      ],
+      "expected_document_ids": [
+        "15202989-2dee-5ff7-8d37-bc8d0c03524c"
+      ],
+      "expected_terms_any": [
+        "左子树",
+        "右子树",
+        "关键字"
+      ]
+    },
+    {
+      "id": "bst-definition-052",
+      "kind": "positive",
+      "topic": "bst-definition",
+      "question": "从课程资料看二叉查找树对左右子树关键字有什么约束？",
+      "expected_documents": [
+        "数据结构与算法：二叉查找树"
+      ],
+      "expected_document_ids": [
+        "15202989-2dee-5ff7-8d37-bc8d0c03524c"
+      ],
+      "expected_terms_any": [
+        "左子树",
+        "右子树",
+        "关键字"
+      ]
+    },
+    {
+      "id": "bst-definition-053",
+      "kind": "positive",
+      "topic": "bst-definition",
+      "question": "从课程资料看二叉查找树对左右子树关键字有什么约束，并指出核心概念。",
+      "expected_documents": [
+        "数据结构与算法：二叉查找树"
+      ],
+      "expected_document_ids": [
+        "15202989-2dee-5ff7-8d37-bc8d0c03524c"
+      ],
+      "expected_terms_any": [
+        "左子树",
+        "右子树",
+        "关键字"
+      ]
+    },
+    {
+      "id": "bst-definition-054",
+      "kind": "positive",
+      "topic": "bst-definition",
+      "question": "从课程资料看二叉查找树对左右子树关键字有什么约束，其判断依据是什么？",
+      "expected_documents": [
+        "数据结构与算法：二叉查找树"
+      ],
+      "expected_document_ids": [
+        "15202989-2dee-5ff7-8d37-bc8d0c03524c"
+      ],
+      "expected_terms_any": [
+        "左子树",
+        "右子树",
+        "关键字"
+      ]
+    },
+    {
+      "id": "bst-definition-055",
+      "kind": "positive",
+      "topic": "bst-definition",
+      "question": "请用定义说明二叉查找树对左右子树关键字有什么约束？",
+      "expected_documents": [
+        "数据结构与算法：二叉查找树"
+      ],
+      "expected_document_ids": [
+        "15202989-2dee-5ff7-8d37-bc8d0c03524c"
+      ],
+      "expected_terms_any": [
+        "左子树",
+        "右子树",
+        "关键字"
+      ]
+    },
+    {
+      "id": "bst-definition-056",
+      "kind": "positive",
+      "topic": "bst-definition",
+      "question": "请用定义说明二叉查找树对左右子树关键字有什么约束，并指出核心概念。",
+      "expected_documents": [
+        "数据结构与算法：二叉查找树"
+      ],
+      "expected_document_ids": [
+        "15202989-2dee-5ff7-8d37-bc8d0c03524c"
+      ],
+      "expected_terms_any": [
+        "左子树",
+        "右子树",
+        "关键字"
+      ]
+    },
+    {
+      "id": "bst-definition-057",
+      "kind": "positive",
+      "topic": "bst-definition",
+      "question": "请用定义说明二叉查找树对左右子树关键字有什么约束，其判断依据是什么？",
+      "expected_documents": [
+        "数据结构与算法：二叉查找树"
+      ],
+      "expected_document_ids": [
+        "15202989-2dee-5ff7-8d37-bc8d0c03524c"
+      ],
+      "expected_terms_any": [
+        "左子树",
+        "右子树",
+        "关键字"
+      ]
+    },
+    {
+      "id": "bst-definition-058",
+      "kind": "positive",
+      "topic": "bst-definition",
+      "question": "复习时应如何理解二叉查找树对左右子树关键字有什么约束？",
+      "expected_documents": [
+        "数据结构与算法：二叉查找树"
+      ],
+      "expected_document_ids": [
+        "15202989-2dee-5ff7-8d37-bc8d0c03524c"
+      ],
+      "expected_terms_any": [
+        "左子树",
+        "右子树",
+        "关键字"
+      ]
+    },
+    {
+      "id": "bst-definition-059",
+      "kind": "positive",
+      "topic": "bst-definition",
+      "question": "复习时应如何理解二叉查找树对左右子树关键字有什么约束，并指出核心概念。",
+      "expected_documents": [
+        "数据结构与算法：二叉查找树"
+      ],
+      "expected_document_ids": [
+        "15202989-2dee-5ff7-8d37-bc8d0c03524c"
+      ],
+      "expected_terms_any": [
+        "左子树",
+        "右子树",
+        "关键字"
+      ]
+    },
+    {
+      "id": "bst-definition-060",
+      "kind": "positive",
+      "topic": "bst-definition",
+      "question": "复习时应如何理解二叉查找树对左右子树关键字有什么约束，其判断依据是什么？",
+      "expected_documents": [
+        "数据结构与算法：二叉查找树"
+      ],
+      "expected_document_ids": [
+        "15202989-2dee-5ff7-8d37-bc8d0c03524c"
+      ],
+      "expected_terms_any": [
+        "左子树",
+        "右子树",
+        "关键字"
+      ]
+    },
+    {
+      "id": "bst-operations-061",
+      "kind": "positive",
+      "topic": "bst-operations",
+      "question": "请解释二叉查找树如何执行查找、插入和删除？",
+      "expected_documents": [
+        "数据结构与算法：二叉查找树"
+      ],
+      "expected_document_ids": [
+        "15202989-2dee-5ff7-8d37-bc8d0c03524c"
+      ],
+      "expected_terms_any": [
+        "查找",
+        "插入",
+        "删除"
+      ]
+    },
+    {
+      "id": "bst-operations-062",
+      "kind": "positive",
+      "topic": "bst-operations",
+      "question": "请解释二叉查找树如何执行查找、插入和删除，并指出核心概念。",
+      "expected_documents": [
+        "数据结构与算法：二叉查找树"
+      ],
+      "expected_document_ids": [
+        "15202989-2dee-5ff7-8d37-bc8d0c03524c"
+      ],
+      "expected_terms_any": [
+        "查找",
+        "插入",
+        "删除"
+      ]
+    },
+    {
+      "id": "bst-operations-063",
+      "kind": "positive",
+      "topic": "bst-operations",
+      "question": "请解释二叉查找树如何执行查找、插入和删除，其判断依据是什么？",
+      "expected_documents": [
+        "数据结构与算法：二叉查找树"
+      ],
+      "expected_document_ids": [
+        "15202989-2dee-5ff7-8d37-bc8d0c03524c"
+      ],
+      "expected_terms_any": [
+        "查找",
+        "插入",
+        "删除"
+      ]
+    },
+    {
+      "id": "bst-operations-064",
+      "kind": "positive",
+      "topic": "bst-operations",
+      "question": "从课程资料看二叉查找树如何执行查找、插入和删除？",
+      "expected_documents": [
+        "数据结构与算法：二叉查找树"
+      ],
+      "expected_document_ids": [
+        "15202989-2dee-5ff7-8d37-bc8d0c03524c"
+      ],
+      "expected_terms_any": [
+        "查找",
+        "插入",
+        "删除"
+      ]
+    },
+    {
+      "id": "bst-operations-065",
+      "kind": "positive",
+      "topic": "bst-operations",
+      "question": "从课程资料看二叉查找树如何执行查找、插入和删除，并指出核心概念。",
+      "expected_documents": [
+        "数据结构与算法：二叉查找树"
+      ],
+      "expected_document_ids": [
+        "15202989-2dee-5ff7-8d37-bc8d0c03524c"
+      ],
+      "expected_terms_any": [
+        "查找",
+        "插入",
+        "删除"
+      ]
+    },
+    {
+      "id": "bst-operations-066",
+      "kind": "positive",
+      "topic": "bst-operations",
+      "question": "从课程资料看二叉查找树如何执行查找、插入和删除，其判断依据是什么？",
+      "expected_documents": [
+        "数据结构与算法：二叉查找树"
+      ],
+      "expected_document_ids": [
+        "15202989-2dee-5ff7-8d37-bc8d0c03524c"
+      ],
+      "expected_terms_any": [
+        "查找",
+        "插入",
+        "删除"
+      ]
+    },
+    {
+      "id": "bst-operations-067",
+      "kind": "positive",
+      "topic": "bst-operations",
+      "question": "请用定义说明二叉查找树如何执行查找、插入和删除？",
+      "expected_documents": [
+        "数据结构与算法：二叉查找树"
+      ],
+      "expected_document_ids": [
+        "15202989-2dee-5ff7-8d37-bc8d0c03524c"
+      ],
+      "expected_terms_any": [
+        "查找",
+        "插入",
+        "删除"
+      ]
+    },
+    {
+      "id": "bst-operations-068",
+      "kind": "positive",
+      "topic": "bst-operations",
+      "question": "请用定义说明二叉查找树如何执行查找、插入和删除，并指出核心概念。",
+      "expected_documents": [
+        "数据结构与算法：二叉查找树"
+      ],
+      "expected_document_ids": [
+        "15202989-2dee-5ff7-8d37-bc8d0c03524c"
+      ],
+      "expected_terms_any": [
+        "查找",
+        "插入",
+        "删除"
+      ]
+    },
+    {
+      "id": "bst-operations-069",
+      "kind": "positive",
+      "topic": "bst-operations",
+      "question": "请用定义说明二叉查找树如何执行查找、插入和删除，其判断依据是什么？",
+      "expected_documents": [
+        "数据结构与算法：二叉查找树"
+      ],
+      "expected_document_ids": [
+        "15202989-2dee-5ff7-8d37-bc8d0c03524c"
+      ],
+      "expected_terms_any": [
+        "查找",
+        "插入",
+        "删除"
+      ]
+    },
+    {
+      "id": "bst-operations-070",
+      "kind": "positive",
+      "topic": "bst-operations",
+      "question": "复习时应如何理解二叉查找树如何执行查找、插入和删除？",
+      "expected_documents": [
+        "数据结构与算法：二叉查找树"
+      ],
+      "expected_document_ids": [
+        "15202989-2dee-5ff7-8d37-bc8d0c03524c"
+      ],
+      "expected_terms_any": [
+        "查找",
+        "插入",
+        "删除"
+      ]
+    },
+    {
+      "id": "bst-operations-071",
+      "kind": "positive",
+      "topic": "bst-operations",
+      "question": "复习时应如何理解二叉查找树如何执行查找、插入和删除，并指出核心概念。",
+      "expected_documents": [
+        "数据结构与算法：二叉查找树"
+      ],
+      "expected_document_ids": [
+        "15202989-2dee-5ff7-8d37-bc8d0c03524c"
+      ],
+      "expected_terms_any": [
+        "查找",
+        "插入",
+        "删除"
+      ]
+    },
+    {
+      "id": "bst-operations-072",
+      "kind": "positive",
+      "topic": "bst-operations",
+      "question": "复习时应如何理解二叉查找树如何执行查找、插入和删除，其判断依据是什么？",
+      "expected_documents": [
+        "数据结构与算法：二叉查找树"
+      ],
+      "expected_document_ids": [
+        "15202989-2dee-5ff7-8d37-bc8d0c03524c"
+      ],
+      "expected_terms_any": [
+        "查找",
+        "插入",
+        "删除"
+      ]
+    },
+    {
+      "id": "avl-balance-073",
+      "kind": "positive",
+      "topic": "avl-balance",
+      "question": "请解释AVL 树怎样利用平衡因子保持平衡？",
+      "expected_documents": [
+        "数据结构与算法：二叉查找树"
+      ],
+      "expected_document_ids": [
+        "15202989-2dee-5ff7-8d37-bc8d0c03524c"
+      ],
+      "expected_terms_any": [
+        "AVL",
+        "平衡因子",
+        "旋转"
+      ]
+    },
+    {
+      "id": "avl-balance-074",
+      "kind": "positive",
+      "topic": "avl-balance",
+      "question": "请解释AVL 树怎样利用平衡因子保持平衡，并指出核心概念。",
+      "expected_documents": [
+        "数据结构与算法：二叉查找树"
+      ],
+      "expected_document_ids": [
+        "15202989-2dee-5ff7-8d37-bc8d0c03524c"
+      ],
+      "expected_terms_any": [
+        "AVL",
+        "平衡因子",
+        "旋转"
+      ]
+    },
+    {
+      "id": "avl-balance-075",
+      "kind": "positive",
+      "topic": "avl-balance",
+      "question": "请解释AVL 树怎样利用平衡因子保持平衡，其判断依据是什么？",
+      "expected_documents": [
+        "数据结构与算法：二叉查找树"
+      ],
+      "expected_document_ids": [
+        "15202989-2dee-5ff7-8d37-bc8d0c03524c"
+      ],
+      "expected_terms_any": [
+        "AVL",
+        "平衡因子",
+        "旋转"
+      ]
+    },
+    {
+      "id": "avl-balance-076",
+      "kind": "positive",
+      "topic": "avl-balance",
+      "question": "从课程资料看AVL 树怎样利用平衡因子保持平衡？",
+      "expected_documents": [
+        "数据结构与算法：二叉查找树"
+      ],
+      "expected_document_ids": [
+        "15202989-2dee-5ff7-8d37-bc8d0c03524c"
+      ],
+      "expected_terms_any": [
+        "AVL",
+        "平衡因子",
+        "旋转"
+      ]
+    },
+    {
+      "id": "avl-balance-077",
+      "kind": "positive",
+      "topic": "avl-balance",
+      "question": "从课程资料看AVL 树怎样利用平衡因子保持平衡，并指出核心概念。",
+      "expected_documents": [
+        "数据结构与算法：二叉查找树"
+      ],
+      "expected_document_ids": [
+        "15202989-2dee-5ff7-8d37-bc8d0c03524c"
+      ],
+      "expected_terms_any": [
+        "AVL",
+        "平衡因子",
+        "旋转"
+      ]
+    },
+    {
+      "id": "avl-balance-078",
+      "kind": "positive",
+      "topic": "avl-balance",
+      "question": "从课程资料看AVL 树怎样利用平衡因子保持平衡，其判断依据是什么？",
+      "expected_documents": [
+        "数据结构与算法：二叉查找树"
+      ],
+      "expected_document_ids": [
+        "15202989-2dee-5ff7-8d37-bc8d0c03524c"
+      ],
+      "expected_terms_any": [
+        "AVL",
+        "平衡因子",
+        "旋转"
+      ]
+    },
+    {
+      "id": "avl-balance-079",
+      "kind": "positive",
+      "topic": "avl-balance",
+      "question": "请用定义说明AVL 树怎样利用平衡因子保持平衡？",
+      "expected_documents": [
+        "数据结构与算法：二叉查找树"
+      ],
+      "expected_document_ids": [
+        "15202989-2dee-5ff7-8d37-bc8d0c03524c"
+      ],
+      "expected_terms_any": [
+        "AVL",
+        "平衡因子",
+        "旋转"
+      ]
+    },
+    {
+      "id": "avl-balance-080",
+      "kind": "positive",
+      "topic": "avl-balance",
+      "question": "请用定义说明AVL 树怎样利用平衡因子保持平衡，并指出核心概念。",
+      "expected_documents": [
+        "数据结构与算法：二叉查找树"
+      ],
+      "expected_document_ids": [
+        "15202989-2dee-5ff7-8d37-bc8d0c03524c"
+      ],
+      "expected_terms_any": [
+        "AVL",
+        "平衡因子",
+        "旋转"
+      ]
+    },
+    {
+      "id": "avl-balance-081",
+      "kind": "positive",
+      "topic": "avl-balance",
+      "question": "请用定义说明AVL 树怎样利用平衡因子保持平衡，其判断依据是什么？",
+      "expected_documents": [
+        "数据结构与算法：二叉查找树"
+      ],
+      "expected_document_ids": [
+        "15202989-2dee-5ff7-8d37-bc8d0c03524c"
+      ],
+      "expected_terms_any": [
+        "AVL",
+        "平衡因子",
+        "旋转"
+      ]
+    },
+    {
+      "id": "avl-balance-082",
+      "kind": "positive",
+      "topic": "avl-balance",
+      "question": "复习时应如何理解AVL 树怎样利用平衡因子保持平衡？",
+      "expected_documents": [
+        "数据结构与算法：二叉查找树"
+      ],
+      "expected_document_ids": [
+        "15202989-2dee-5ff7-8d37-bc8d0c03524c"
+      ],
+      "expected_terms_any": [
+        "AVL",
+        "平衡因子",
+        "旋转"
+      ]
+    },
+    {
+      "id": "avl-balance-083",
+      "kind": "positive",
+      "topic": "avl-balance",
+      "question": "复习时应如何理解AVL 树怎样利用平衡因子保持平衡，并指出核心概念。",
+      "expected_documents": [
+        "数据结构与算法：二叉查找树"
+      ],
+      "expected_document_ids": [
+        "15202989-2dee-5ff7-8d37-bc8d0c03524c"
+      ],
+      "expected_terms_any": [
+        "AVL",
+        "平衡因子",
+        "旋转"
+      ]
+    },
+    {
+      "id": "avl-balance-084",
+      "kind": "positive",
+      "topic": "avl-balance",
+      "question": "复习时应如何理解AVL 树怎样利用平衡因子保持平衡，其判断依据是什么？",
+      "expected_documents": [
+        "数据结构与算法：二叉查找树"
+      ],
+      "expected_document_ids": [
+        "15202989-2dee-5ff7-8d37-bc8d0c03524c"
+      ],
+      "expected_terms_any": [
+        "AVL",
+        "平衡因子",
+        "旋转"
+      ]
+    },
+    {
+      "id": "greedy-method-085",
+      "kind": "positive",
+      "topic": "greedy-method",
+      "question": "请解释贪心算法为什么每一步选择局部最优？",
+      "expected_documents": [
+        "数据结构与算法：基础算法"
+      ],
+      "expected_document_ids": [
+        "c9211f67-bbcd-589d-9ec0-c317b107376e"
+      ],
+      "expected_terms_any": [
+        "贪心",
+        "局部",
+        "最优"
+      ]
+    },
+    {
+      "id": "greedy-method-086",
+      "kind": "positive",
+      "topic": "greedy-method",
+      "question": "请解释贪心算法为什么每一步选择局部最优，并指出核心概念。",
+      "expected_documents": [
+        "数据结构与算法：基础算法"
+      ],
+      "expected_document_ids": [
+        "c9211f67-bbcd-589d-9ec0-c317b107376e"
+      ],
+      "expected_terms_any": [
+        "贪心",
+        "局部",
+        "最优"
+      ]
+    },
+    {
+      "id": "greedy-method-087",
+      "kind": "positive",
+      "topic": "greedy-method",
+      "question": "请解释贪心算法为什么每一步选择局部最优，其判断依据是什么？",
+      "expected_documents": [
+        "数据结构与算法：基础算法"
+      ],
+      "expected_document_ids": [
+        "c9211f67-bbcd-589d-9ec0-c317b107376e"
+      ],
+      "expected_terms_any": [
+        "贪心",
+        "局部",
+        "最优"
+      ]
+    },
+    {
+      "id": "greedy-method-088",
+      "kind": "positive",
+      "topic": "greedy-method",
+      "question": "从课程资料看贪心算法为什么每一步选择局部最优？",
+      "expected_documents": [
+        "数据结构与算法：基础算法"
+      ],
+      "expected_document_ids": [
+        "c9211f67-bbcd-589d-9ec0-c317b107376e"
+      ],
+      "expected_terms_any": [
+        "贪心",
+        "局部",
+        "最优"
+      ]
+    },
+    {
+      "id": "greedy-method-089",
+      "kind": "positive",
+      "topic": "greedy-method",
+      "question": "从课程资料看贪心算法为什么每一步选择局部最优，并指出核心概念。",
+      "expected_documents": [
+        "数据结构与算法：基础算法"
+      ],
+      "expected_document_ids": [
+        "c9211f67-bbcd-589d-9ec0-c317b107376e"
+      ],
+      "expected_terms_any": [
+        "贪心",
+        "局部",
+        "最优"
+      ]
+    },
+    {
+      "id": "greedy-method-090",
+      "kind": "positive",
+      "topic": "greedy-method",
+      "question": "从课程资料看贪心算法为什么每一步选择局部最优，其判断依据是什么？",
+      "expected_documents": [
+        "数据结构与算法：基础算法"
+      ],
+      "expected_document_ids": [
+        "c9211f67-bbcd-589d-9ec0-c317b107376e"
+      ],
+      "expected_terms_any": [
+        "贪心",
+        "局部",
+        "最优"
+      ]
+    },
+    {
+      "id": "greedy-method-091",
+      "kind": "positive",
+      "topic": "greedy-method",
+      "question": "请用定义说明贪心算法为什么每一步选择局部最优？",
+      "expected_documents": [
+        "数据结构与算法：基础算法"
+      ],
+      "expected_document_ids": [
+        "c9211f67-bbcd-589d-9ec0-c317b107376e"
+      ],
+      "expected_terms_any": [
+        "贪心",
+        "局部",
+        "最优"
+      ]
+    },
+    {
+      "id": "greedy-method-092",
+      "kind": "positive",
+      "topic": "greedy-method",
+      "question": "请用定义说明贪心算法为什么每一步选择局部最优，并指出核心概念。",
+      "expected_documents": [
+        "数据结构与算法：基础算法"
+      ],
+      "expected_document_ids": [
+        "c9211f67-bbcd-589d-9ec0-c317b107376e"
+      ],
+      "expected_terms_any": [
+        "贪心",
+        "局部",
+        "最优"
+      ]
+    },
+    {
+      "id": "greedy-method-093",
+      "kind": "positive",
+      "topic": "greedy-method",
+      "question": "请用定义说明贪心算法为什么每一步选择局部最优，其判断依据是什么？",
+      "expected_documents": [
+        "数据结构与算法：基础算法"
+      ],
+      "expected_document_ids": [
+        "c9211f67-bbcd-589d-9ec0-c317b107376e"
+      ],
+      "expected_terms_any": [
+        "贪心",
+        "局部",
+        "最优"
+      ]
+    },
+    {
+      "id": "greedy-method-094",
+      "kind": "positive",
+      "topic": "greedy-method",
+      "question": "复习时应如何理解贪心算法为什么每一步选择局部最优？",
+      "expected_documents": [
+        "数据结构与算法：基础算法"
+      ],
+      "expected_document_ids": [
+        "c9211f67-bbcd-589d-9ec0-c317b107376e"
+      ],
+      "expected_terms_any": [
+        "贪心",
+        "局部",
+        "最优"
+      ]
+    },
+    {
+      "id": "greedy-method-095",
+      "kind": "positive",
+      "topic": "greedy-method",
+      "question": "复习时应如何理解贪心算法为什么每一步选择局部最优，并指出核心概念。",
+      "expected_documents": [
+        "数据结构与算法：基础算法"
+      ],
+      "expected_document_ids": [
+        "c9211f67-bbcd-589d-9ec0-c317b107376e"
+      ],
+      "expected_terms_any": [
+        "贪心",
+        "局部",
+        "最优"
+      ]
+    },
+    {
+      "id": "greedy-method-096",
+      "kind": "positive",
+      "topic": "greedy-method",
+      "question": "复习时应如何理解贪心算法为什么每一步选择局部最优，其判断依据是什么？",
+      "expected_documents": [
+        "数据结构与算法：基础算法"
+      ],
+      "expected_document_ids": [
+        "c9211f67-bbcd-589d-9ec0-c317b107376e"
+      ],
+      "expected_terms_any": [
+        "贪心",
+        "局部",
+        "最优"
+      ]
+    },
+    {
+      "id": "dynamic-programming-097",
+      "kind": "positive",
+      "topic": "dynamic-programming",
+      "question": "请解释动态规划中的最优子结构和递推关系是什么？",
+      "expected_documents": [
+        "数据结构与算法：基础算法"
+      ],
+      "expected_document_ids": [
+        "c9211f67-bbcd-589d-9ec0-c317b107376e"
+      ],
+      "expected_terms_any": [
+        "最优子结构",
+        "递推关系",
+        "动态规划"
+      ]
+    },
+    {
+      "id": "dynamic-programming-098",
+      "kind": "positive",
+      "topic": "dynamic-programming",
+      "question": "请解释动态规划中的最优子结构和递推关系是什么，并指出核心概念。",
+      "expected_documents": [
+        "数据结构与算法：基础算法"
+      ],
+      "expected_document_ids": [
+        "c9211f67-bbcd-589d-9ec0-c317b107376e"
+      ],
+      "expected_terms_any": [
+        "最优子结构",
+        "递推关系",
+        "动态规划"
+      ]
+    },
+    {
+      "id": "dynamic-programming-099",
+      "kind": "positive",
+      "topic": "dynamic-programming",
+      "question": "请解释动态规划中的最优子结构和递推关系是什么，其判断依据是什么？",
+      "expected_documents": [
+        "数据结构与算法：基础算法"
+      ],
+      "expected_document_ids": [
+        "c9211f67-bbcd-589d-9ec0-c317b107376e"
+      ],
+      "expected_terms_any": [
+        "最优子结构",
+        "递推关系",
+        "动态规划"
+      ]
+    },
+    {
+      "id": "dynamic-programming-100",
+      "kind": "positive",
+      "topic": "dynamic-programming",
+      "question": "从课程资料看动态规划中的最优子结构和递推关系是什么？",
+      "expected_documents": [
+        "数据结构与算法：基础算法"
+      ],
+      "expected_document_ids": [
+        "c9211f67-bbcd-589d-9ec0-c317b107376e"
+      ],
+      "expected_terms_any": [
+        "最优子结构",
+        "递推关系",
+        "动态规划"
+      ]
+    },
+    {
+      "id": "dynamic-programming-101",
+      "kind": "positive",
+      "topic": "dynamic-programming",
+      "question": "从课程资料看动态规划中的最优子结构和递推关系是什么，并指出核心概念。",
+      "expected_documents": [
+        "数据结构与算法：基础算法"
+      ],
+      "expected_document_ids": [
+        "c9211f67-bbcd-589d-9ec0-c317b107376e"
+      ],
+      "expected_terms_any": [
+        "最优子结构",
+        "递推关系",
+        "动态规划"
+      ]
+    },
+    {
+      "id": "dynamic-programming-102",
+      "kind": "positive",
+      "topic": "dynamic-programming",
+      "question": "从课程资料看动态规划中的最优子结构和递推关系是什么，其判断依据是什么？",
+      "expected_documents": [
+        "数据结构与算法：基础算法"
+      ],
+      "expected_document_ids": [
+        "c9211f67-bbcd-589d-9ec0-c317b107376e"
+      ],
+      "expected_terms_any": [
+        "最优子结构",
+        "递推关系",
+        "动态规划"
+      ]
+    },
+    {
+      "id": "dynamic-programming-103",
+      "kind": "positive",
+      "topic": "dynamic-programming",
+      "question": "请用定义说明动态规划中的最优子结构和递推关系是什么？",
+      "expected_documents": [
+        "数据结构与算法：基础算法"
+      ],
+      "expected_document_ids": [
+        "c9211f67-bbcd-589d-9ec0-c317b107376e"
+      ],
+      "expected_terms_any": [
+        "最优子结构",
+        "递推关系",
+        "动态规划"
+      ]
+    },
+    {
+      "id": "dynamic-programming-104",
+      "kind": "positive",
+      "topic": "dynamic-programming",
+      "question": "请用定义说明动态规划中的最优子结构和递推关系是什么，并指出核心概念。",
+      "expected_documents": [
+        "数据结构与算法：基础算法"
+      ],
+      "expected_document_ids": [
+        "c9211f67-bbcd-589d-9ec0-c317b107376e"
+      ],
+      "expected_terms_any": [
+        "最优子结构",
+        "递推关系",
+        "动态规划"
+      ]
+    },
+    {
+      "id": "dynamic-programming-105",
+      "kind": "positive",
+      "topic": "dynamic-programming",
+      "question": "请用定义说明动态规划中的最优子结构和递推关系是什么，其判断依据是什么？",
+      "expected_documents": [
+        "数据结构与算法：基础算法"
+      ],
+      "expected_document_ids": [
+        "c9211f67-bbcd-589d-9ec0-c317b107376e"
+      ],
+      "expected_terms_any": [
+        "最优子结构",
+        "递推关系",
+        "动态规划"
+      ]
+    },
+    {
+      "id": "dynamic-programming-106",
+      "kind": "positive",
+      "topic": "dynamic-programming",
+      "question": "复习时应如何理解动态规划中的最优子结构和递推关系是什么？",
+      "expected_documents": [
+        "数据结构与算法：基础算法"
+      ],
+      "expected_document_ids": [
+        "c9211f67-bbcd-589d-9ec0-c317b107376e"
+      ],
+      "expected_terms_any": [
+        "最优子结构",
+        "递推关系",
+        "动态规划"
+      ]
+    },
+    {
+      "id": "dynamic-programming-107",
+      "kind": "positive",
+      "topic": "dynamic-programming",
+      "question": "复习时应如何理解动态规划中的最优子结构和递推关系是什么，并指出核心概念。",
+      "expected_documents": [
+        "数据结构与算法：基础算法"
+      ],
+      "expected_document_ids": [
+        "c9211f67-bbcd-589d-9ec0-c317b107376e"
+      ],
+      "expected_terms_any": [
+        "最优子结构",
+        "递推关系",
+        "动态规划"
+      ]
+    },
+    {
+      "id": "dynamic-programming-108",
+      "kind": "positive",
+      "topic": "dynamic-programming",
+      "question": "复习时应如何理解动态规划中的最优子结构和递推关系是什么，其判断依据是什么？",
+      "expected_documents": [
+        "数据结构与算法：基础算法"
+      ],
+      "expected_document_ids": [
+        "c9211f67-bbcd-589d-9ec0-c317b107376e"
+      ],
+      "expected_terms_any": [
+        "最优子结构",
+        "递推关系",
+        "动态规划"
+      ]
+    },
+    {
+      "id": "knapsack-109",
+      "kind": "positive",
+      "topic": "knapsack",
+      "question": "请解释0-1 背包问题怎样用动态规划描述状态？",
+      "expected_documents": [
+        "数据结构与算法：基础算法"
+      ],
+      "expected_document_ids": [
+        "c9211f67-bbcd-589d-9ec0-c317b107376e"
+      ],
+      "expected_terms_any": [
+        "背包",
+        "状态",
+        "动态规划"
+      ]
+    },
+    {
+      "id": "knapsack-110",
+      "kind": "positive",
+      "topic": "knapsack",
+      "question": "请解释0-1 背包问题怎样用动态规划描述状态，并指出核心概念。",
+      "expected_documents": [
+        "数据结构与算法：基础算法"
+      ],
+      "expected_document_ids": [
+        "c9211f67-bbcd-589d-9ec0-c317b107376e"
+      ],
+      "expected_terms_any": [
+        "背包",
+        "状态",
+        "动态规划"
+      ]
+    },
+    {
+      "id": "knapsack-111",
+      "kind": "positive",
+      "topic": "knapsack",
+      "question": "请解释0-1 背包问题怎样用动态规划描述状态，其判断依据是什么？",
+      "expected_documents": [
+        "数据结构与算法：基础算法"
+      ],
+      "expected_document_ids": [
+        "c9211f67-bbcd-589d-9ec0-c317b107376e"
+      ],
+      "expected_terms_any": [
+        "背包",
+        "状态",
+        "动态规划"
+      ]
+    },
+    {
+      "id": "knapsack-112",
+      "kind": "positive",
+      "topic": "knapsack",
+      "question": "从课程资料看0-1 背包问题怎样用动态规划描述状态？",
+      "expected_documents": [
+        "数据结构与算法：基础算法"
+      ],
+      "expected_document_ids": [
+        "c9211f67-bbcd-589d-9ec0-c317b107376e"
+      ],
+      "expected_terms_any": [
+        "背包",
+        "状态",
+        "动态规划"
+      ]
+    },
+    {
+      "id": "knapsack-113",
+      "kind": "positive",
+      "topic": "knapsack",
+      "question": "从课程资料看0-1 背包问题怎样用动态规划描述状态，并指出核心概念。",
+      "expected_documents": [
+        "数据结构与算法：基础算法"
+      ],
+      "expected_document_ids": [
+        "c9211f67-bbcd-589d-9ec0-c317b107376e"
+      ],
+      "expected_terms_any": [
+        "背包",
+        "状态",
+        "动态规划"
+      ]
+    },
+    {
+      "id": "knapsack-114",
+      "kind": "positive",
+      "topic": "knapsack",
+      "question": "从课程资料看0-1 背包问题怎样用动态规划描述状态，其判断依据是什么？",
+      "expected_documents": [
+        "数据结构与算法：基础算法"
+      ],
+      "expected_document_ids": [
+        "c9211f67-bbcd-589d-9ec0-c317b107376e"
+      ],
+      "expected_terms_any": [
+        "背包",
+        "状态",
+        "动态规划"
+      ]
+    },
+    {
+      "id": "knapsack-115",
+      "kind": "positive",
+      "topic": "knapsack",
+      "question": "请用定义说明0-1 背包问题怎样用动态规划描述状态？",
+      "expected_documents": [
+        "数据结构与算法：基础算法"
+      ],
+      "expected_document_ids": [
+        "c9211f67-bbcd-589d-9ec0-c317b107376e"
+      ],
+      "expected_terms_any": [
+        "背包",
+        "状态",
+        "动态规划"
+      ]
+    },
+    {
+      "id": "knapsack-116",
+      "kind": "positive",
+      "topic": "knapsack",
+      "question": "请用定义说明0-1 背包问题怎样用动态规划描述状态，并指出核心概念。",
+      "expected_documents": [
+        "数据结构与算法：基础算法"
+      ],
+      "expected_document_ids": [
+        "c9211f67-bbcd-589d-9ec0-c317b107376e"
+      ],
+      "expected_terms_any": [
+        "背包",
+        "状态",
+        "动态规划"
+      ]
+    },
+    {
+      "id": "knapsack-117",
+      "kind": "positive",
+      "topic": "knapsack",
+      "question": "请用定义说明0-1 背包问题怎样用动态规划描述状态，其判断依据是什么？",
+      "expected_documents": [
+        "数据结构与算法：基础算法"
+      ],
+      "expected_document_ids": [
+        "c9211f67-bbcd-589d-9ec0-c317b107376e"
+      ],
+      "expected_terms_any": [
+        "背包",
+        "状态",
+        "动态规划"
+      ]
+    },
+    {
+      "id": "knapsack-118",
+      "kind": "positive",
+      "topic": "knapsack",
+      "question": "复习时应如何理解0-1 背包问题怎样用动态规划描述状态？",
+      "expected_documents": [
+        "数据结构与算法：基础算法"
+      ],
+      "expected_document_ids": [
+        "c9211f67-bbcd-589d-9ec0-c317b107376e"
+      ],
+      "expected_terms_any": [
+        "背包",
+        "状态",
+        "动态规划"
+      ]
+    },
+    {
+      "id": "knapsack-119",
+      "kind": "positive",
+      "topic": "knapsack",
+      "question": "复习时应如何理解0-1 背包问题怎样用动态规划描述状态，并指出核心概念。",
+      "expected_documents": [
+        "数据结构与算法：基础算法"
+      ],
+      "expected_document_ids": [
+        "c9211f67-bbcd-589d-9ec0-c317b107376e"
+      ],
+      "expected_terms_any": [
+        "背包",
+        "状态",
+        "动态规划"
+      ]
+    },
+    {
+      "id": "knapsack-120",
+      "kind": "positive",
+      "topic": "knapsack",
+      "question": "复习时应如何理解0-1 背包问题怎样用动态规划描述状态，其判断依据是什么？",
+      "expected_documents": [
+        "数据结构与算法：基础算法"
+      ],
+      "expected_document_ids": [
+        "c9211f67-bbcd-589d-9ec0-c317b107376e"
+      ],
+      "expected_terms_any": [
+        "背包",
+        "状态",
+        "动态规划"
+      ]
+    },
+    {
+      "id": "out-of-scope-001",
+      "kind": "negative",
+      "topic": "out-of-scope",
+      "question": "光合作用的暗反应在哪里进行？",
+      "expected_documents": [],
+      "expected_terms_any": []
+    },
+    {
+      "id": "out-of-scope-002",
+      "kind": "negative",
+      "topic": "out-of-scope",
+      "question": "法国大革命发生在哪一年？",
+      "expected_documents": [],
+      "expected_terms_any": []
+    },
+    {
+      "id": "out-of-scope-003",
+      "kind": "negative",
+      "topic": "out-of-scope",
+      "question": "如何制作意大利提拉米苏？",
+      "expected_documents": [],
+      "expected_terms_any": []
+    },
+    {
+      "id": "out-of-scope-004",
+      "kind": "negative",
+      "topic": "out-of-scope",
+      "question": "量子纠缠是否允许超光速通信？",
+      "expected_documents": [],
+      "expected_terms_any": []
+    },
+    {
+      "id": "out-of-scope-005",
+      "kind": "negative",
+      "topic": "out-of-scope",
+      "question": "人体血液循环有哪些主要路径？",
+      "expected_documents": [],
+      "expected_terms_any": []
+    },
+    {
+      "id": "out-of-scope-006",
+      "kind": "negative",
+      "topic": "out-of-scope",
+      "question": "如何为猫咪选择日常猫粮？",
+      "expected_documents": [],
+      "expected_terms_any": []
+    },
+    {
+      "id": "out-of-scope-007",
+      "kind": "negative",
+      "topic": "out-of-scope",
+      "question": "莫扎特创作了哪些著名歌剧？",
+      "expected_documents": [],
+      "expected_terms_any": []
+    },
+    {
+      "id": "out-of-scope-008",
+      "kind": "negative",
+      "topic": "out-of-scope",
+      "question": "太阳系中质量最大的行星是什么？",
+      "expected_documents": [],
+      "expected_terms_any": []
+    },
+    {
+      "id": "out-of-scope-009",
+      "kind": "negative",
+      "topic": "out-of-scope",
+      "question": "明代瓷器有哪些典型纹样？",
+      "expected_documents": [],
+      "expected_terms_any": []
+    },
+    {
+      "id": "out-of-scope-010",
+      "kind": "negative",
+      "topic": "out-of-scope",
+      "question": "个人所得税专项附加扣除如何申报？",
+      "expected_documents": [],
+      "expected_terms_any": []
+    },
+    {
+      "id": "out-of-scope-011",
+      "kind": "negative",
+      "topic": "out-of-scope",
+      "question": "篮球比赛的三秒违例是什么？",
+      "expected_documents": [],
+      "expected_terms_any": []
+    },
+    {
+      "id": "out-of-scope-012",
+      "kind": "negative",
+      "topic": "out-of-scope",
+      "question": "英语虚拟语气有哪些基本形式？",
+      "expected_documents": [],
+      "expected_terms_any": []
+    },
+    {
+      "id": "out-of-scope-013",
+      "kind": "negative",
+      "topic": "out-of-scope",
+      "question": "咖啡豆浅烘和深烘有什么区别？",
+      "expected_documents": [],
+      "expected_terms_any": []
+    },
+    {
+      "id": "out-of-scope-014",
+      "kind": "negative",
+      "topic": "out-of-scope",
+      "question": "地震震级和烈度有什么区别？",
+      "expected_documents": [],
+      "expected_terms_any": []
+    },
+    {
+      "id": "out-of-scope-015",
+      "kind": "negative",
+      "topic": "out-of-scope",
+      "question": "如何修剪月季促进开花？",
+      "expected_documents": [],
+      "expected_terms_any": []
+    },
+    {
+      "id": "out-of-scope-016",
+      "kind": "negative",
+      "topic": "out-of-scope",
+      "question": "古希腊城邦制度有什么特点？",
+      "expected_documents": [],
+      "expected_terms_any": []
+    },
+    {
+      "id": "out-of-scope-017",
+      "kind": "negative",
+      "topic": "out-of-scope",
+      "question": "人体免疫系统如何识别病毒？",
+      "expected_documents": [],
+      "expected_terms_any": []
+    },
+    {
+      "id": "out-of-scope-018",
+      "kind": "negative",
+      "topic": "out-of-scope",
+      "question": "新能源汽车电池冬季为何衰减？",
+      "expected_documents": [],
+      "expected_terms_any": []
+    },
+    {
+      "id": "out-of-scope-019",
+      "kind": "negative",
+      "topic": "out-of-scope",
+      "question": "油画颜料与水彩颜料有什么区别？",
+      "expected_documents": [],
+      "expected_terms_any": []
+    },
+    {
+      "id": "out-of-scope-020",
+      "kind": "negative",
+      "topic": "out-of-scope",
+      "question": "如何制定马拉松训练计划？",
+      "expected_documents": [],
+      "expected_terms_any": []
+    },
+    {
+      "id": "out-of-scope-021",
+      "kind": "negative",
+      "topic": "out-of-scope",
+      "question": "海洋潮汐主要由什么引起？",
+      "expected_documents": [],
+      "expected_terms_any": []
+    },
+    {
+      "id": "out-of-scope-022",
+      "kind": "negative",
+      "topic": "out-of-scope",
+      "question": "合同违约责任通常包括哪些形式？",
+      "expected_documents": [],
+      "expected_terms_any": []
+    },
+    {
+      "id": "out-of-scope-023",
+      "kind": "negative",
+      "topic": "out-of-scope",
+      "question": "交响乐团有哪些主要声部？",
+      "expected_documents": [],
+      "expected_terms_any": []
+    },
+    {
+      "id": "out-of-scope-024",
+      "kind": "negative",
+      "topic": "out-of-scope",
+      "question": "茶叶发酵程度如何影响口感？",
+      "expected_documents": [],
+      "expected_terms_any": []
+    },
+    {
+      "id": "out-of-scope-025",
+      "kind": "negative",
+      "topic": "out-of-scope",
+      "question": "台风是如何形成并增强的？",
+      "expected_documents": [],
+      "expected_terms_any": []
+    },
+    {
+      "id": "out-of-scope-026",
+      "kind": "negative",
+      "topic": "out-of-scope",
+      "question": "为什么北极会出现极昼和极夜？",
+      "expected_documents": [],
+      "expected_terms_any": []
+    },
+    {
+      "id": "out-of-scope-027",
+      "kind": "negative",
+      "topic": "out-of-scope",
+      "question": "摄影中的光圈如何影响景深？",
+      "expected_documents": [],
+      "expected_terms_any": []
+    },
+    {
+      "id": "out-of-scope-028",
+      "kind": "negative",
+      "topic": "out-of-scope",
+      "question": "细胞有丝分裂包括哪些阶段？",
+      "expected_documents": [],
+      "expected_terms_any": []
+    },
+    {
+      "id": "out-of-scope-029",
+      "kind": "negative",
+      "topic": "out-of-scope",
+      "question": "中国古代科举制度如何演变？",
+      "expected_documents": [],
+      "expected_terms_any": []
+    },
+    {
+      "id": "out-of-scope-030",
+      "kind": "negative",
+      "topic": "out-of-scope",
+      "question": "家用空调制冷循环是什么原理？",
+      "expected_documents": [],
+      "expected_terms_any": []
+    }
+  ]
+}

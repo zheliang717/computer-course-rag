@@ -1,0 +1,82 @@
+# Standalone stack. Always use: -p rag-funnel --env-file .private/funnel/stack.env
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: rag_preview
+      POSTGRES_USER: rag_preview
+      POSTGRES_PASSWORD: ${PREVIEW_DB_PASSWORD:?Run scripts/funnel.ps1 -Action Prepare first}
+    volumes:
+      - preview_postgres:/var/lib/postgresql/data
+      - ./backups/funnel:/backups
+    networks: [data]
+    healthcheck:
+      test: [CMD-SHELL, "pg_isready -U rag_preview -d rag_preview"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    mem_limit: 1g
+    security_opt: [no-new-privileges:true]
+
+  api:
+    image: ${PREVIEW_API_IMAGE:-computer-course-rag-api:latest}
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: postgresql+psycopg://rag_preview:${PREVIEW_DB_PASSWORD}@postgres:5432/rag_preview
+      STORAGE_BACKEND: postgres
+      AUTH_REQUIRED: "true"
+      AUTH_SECRET: ${PREVIEW_AUTH_SECRET:?Missing preview signing secret}
+      LLM_PROVIDER: offline
+      MODEL_CONFIG_SECRET_PATH: /app/config-data/model-config.key
+      EMBEDDING_PROVIDER: ${PREVIEW_EMBEDDING_PROVIDER:-bge}
+      EMBEDDING_MODEL: ${PREVIEW_EMBEDDING_MODEL:-sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2}
+      EMBEDDING_DIMENSIONS: ${PREVIEW_EMBEDDING_DIMENSIONS:-512}
+      EMBEDDING_CACHE_DIR: /app/models-cache
+      HF_HUB_OFFLINE: "1"
+    volumes:
+      - preview_config:/app/config-data
+      - ./models-cache:/app/models-cache:ro
+      - ./.private/funnel/reports:/app/reports
+    networks: [data, edge]
+    depends_on:
+      postgres: {condition: service_healthy}
+    mem_limit: 4g
+    security_opt: [no-new-privileges:true]
+
+  web:
+    image: ${PREVIEW_WEB_IMAGE:-computer-course-rag-web:public}
+    restart: unless-stopped
+    environment:
+      PUBLIC_PREVIEW: "true"
+    ports: ["127.0.0.1:18080:80"]
+    networks: [edge]
+    depends_on: [api]
+    mem_limit: 256m
+    read_only: true
+    tmpfs: [/tmp]
+    security_opt: [no-new-privileges:true]
+
+  bootstrap:
+    profiles: [tools]
+    image: ${PREVIEW_API_IMAGE:-computer-course-rag-api:latest}
+    environment:
+      DATABASE_URL: postgresql+psycopg://rag_preview:${PREVIEW_DB_PASSWORD}@postgres:5432/rag_preview
+      PREVIEW_AUTH_SECRET: ${PREVIEW_AUTH_SECRET}
+      MODEL_CONFIG_SECRET_PATH: /app/config-data/model-config.key
+      ALLOW_FUNNEL_COPY_PROVISION: "yes"
+    volumes:
+      - preview_config:/app/config-data
+      - ./.private/funnel:/provision
+      - ./scripts/provision_funnel_preview.py:/run/provision_funnel_preview.py:ro
+    networks: [data]
+    command: [python, /run/provision_funnel_preview.py]
+    security_opt: [no-new-privileges:true]
+
+networks:
+  data: {internal: true}
+  edge: {}
+
+volumes:
+  preview_postgres: {}
+  preview_config: {}

@@ -1,0 +1,76 @@
+/* UX12: navigation follows reading intent; answers have a document hierarchy. */
+.mobile-nav-spacer,.mobile-nav-dismiss,.mobile-nav-launcher,.mobile-nav-backdrop{display:none}
+body>.mobile-nav-launcher{display:flex;align-items:center;justify-content:center;position:fixed;left:calc(12px + env(safe-area-inset-left,0px));top:calc(12px + env(safe-area-inset-top,0px));width:44px;height:44px;padding:0;border:1px solid #cdddf2;background:#fff;color:#3565a8;box-shadow:0 3px 12px #244b7714;border-radius:10px;z-index:41}
+body>.mobile-nav-launcher svg{display:block;flex:none;width:20px;height:20px}
+#app .mobile-navigation-collapsed .platform-topbar{visibility:hidden;pointer-events:none}
+@media(min-width:921px){
+  #app .platform-shell{grid-template-columns:264px minmax(0,1fr)}
+  #app .platform-shell.mobile-navigation-collapsed{grid-template-columns:72px minmax(0,1fr)}
+  #app .mobile-nav-spacer{display:block;grid-column:1;grid-row:1;pointer-events:none}
+  #app .platform-main{grid-column:2;grid-row:1}
+  #app .platform-shell .platform-sidebar{position:fixed;inset:0 auto 0 0;width:264px;z-index:40;transform:translateX(0);transition:transform .2s ease,visibility .2s}
+  #app .platform-shell .platform-sidebar.is-mobile-collapsed{transform:translateX(-105%);visibility:hidden;pointer-events:none}
+  #app .mobile-nav-dismiss{display:block;position:absolute;right:12px;top:22px;width:36px;height:36px;min-height:36px;padding:5px;font-size:0;background:#f0f5fc;border:1px solid #dfe8f4;color:#5d7ba1}
+  #app .mobile-nav-dismiss::after{content:'‹';font-size:22px}
+  #app .platform-sidebar .platform-brand{padding-right:35px}
+}
+#global-ai-assistant .assistant-response{border-radius:16px;padding:20px;box-shadow:0 4px 18px #213e6810}
+#global-ai-assistant .assistant-answer-heading{gap:10px;margin-bottom:16px;padding-bottom:14px}
+#global-ai-assistant .assistant-answer-heading>div{min-width:0;flex:1}
+#global-ai-assistant .assistant-answer-heading strong{font-size:14px;color:#243d60}
+#global-ai-assistant .assistant-answer-heading small{font-size:10px;line-height:1.6;color:#7e8ca2}
+#global-ai-assistant .assistant-answer-heading .assistant-read-button{font-size:11px;min-height:36px;padding:8px 10px}
+#global-ai-assistant .assistant-reading-links{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:-3px 0 16px}
+#global-ai-assistant .assistant-reading-links button{border:1px solid #cddff6;background:#f0f6ff;color:#37659d;font-size:11px;border-radius:20px;padding:7px 11px}
+#global-ai-assistant .assistant-reading-links>span{font-size:10px;color:#8293ab}
+#global-ai-assistant .answer-teaching-layout .answer-markdown{font-size:15px;line-height:1.9;color:#2a3b52}
+#global-ai-assistant .answer-teaching-layout .answer-markdown .answer-opening{background:#f0f6ff;border-left:3px solid #5a8ad1;border-radius:0 9px 9px 0;padding:14px 16px;color:#254972;margin:0 0 23px;line-height:1.85}
+#global-ai-assistant .answer-teaching-layout .answer-markdown strong{color:#1d416e;font-weight:750}
+#global-ai-assistant .answer-teaching-layout .answer-markdown h1{font-size:1.45em;line-height:1.5;margin:24px 0 14px;color:#18375d}
+#global-ai-assistant .answer-teaching-layout .answer-markdown h2{font-size:1.22em;line-height:1.6;margin:28px 0 13px;padding:0 0 9px;border-bottom:1px solid #dce6f2;color:#183c66}
+#global-ai-assistant .answer-teaching-layout .answer-markdown h3{font-size:1.08em;line-height:1.6;margin:22px 0 10px;color:#2b5483}
+#global-ai-assistant .answer-teaching-layout .answer-markdown li{margin:7px 0}
+#global-ai-assistant .answer-teaching-layout .answer-markdown blockquote{background:#f8fafc;border-left:3px solid #a7bbd4;color:#526a87;padding:10px 14px}
+#global-ai-assistant .answer-teaching-layout .answer-outline{background:#f8fafd;border:1px solid #e3eaf4;border-radius:11px;margin:0 0 20px}
+#global-ai-assistant .answer-teaching-layout .answer-outline summary{font-size:11px;padding:11px 13px;color:#627b9b}
+#global-ai-assistant .answer-teaching-layout .answer-outline nav{display:flex;flex-wrap:wrap;gap:6px;padding:0 10px 10px}
+#global-ai-assistant .answer-teaching-layout .answer-outline nav button{border:1px solid #e0e8f4;border-radius:7px;background:white;color:#3a6090;font-size:11px;padding:7px 9px;gap:6px;max-width:100%}
+#global-ai-assistant .answer-teaching-layout .answer-outline nav button.subordinate{padding-inline-start:9px}
+#global-ai-assistant details.assistant-sources{display:block;border:1px solid #dce7f4;border-radius:11px;margin-top:22px;padding:0;background:#f8fbff;scroll-margin-top:18px}
+#global-ai-assistant .assistant-sources summary{display:flex;gap:10px;justify-content:space-between;align-items:center;padding:13px;cursor:pointer;list-style:none}
+#global-ai-assistant .assistant-sources summary::-webkit-details-marker{display:none}
+#global-ai-assistant .assistant-sources summary strong{font-size:12px;color:#365c89}
+#global-ai-assistant .assistant-sources summary>span{font-size:10px;color:#7993b5}
+#global-ai-assistant .assistant-source-list{display:grid;gap:6px;padding:0 10px 10px}
+#global-ai-assistant .assistant-source-list>button{display:flex;gap:10px;align-items:center;padding:11px;background:white;border:1px solid #e1e9f4;border-radius:8px}
+#global-ai-assistant .assistant-source-list>button>b{font-size:10px;color:#819abb}
+#global-ai-assistant .assistant-source-list>button>span{display:grid;gap:5px;flex:1;min-width:0;font-size:12px;line-height:1.6;overflow-wrap:anywhere}
+#global-ai-assistant .assistant-source-list small{font-size:10px;color:#7a90ad}
+#global-ai-assistant .assistant-source-list i{font-style:normal;color:#7695c0}
+#global-ai-assistant .assistant-result-actions{border-top:1px solid #e5edf6;padding-top:16px;margin-top:20px}
+#global-ai-assistant .assistant-answer-scope{font-size:10px;color:#8295af;margin:10px 0 7px;line-height:1.6}
+#global-ai-assistant .assistant-scope-notice{padding:0;font-size:11px;line-height:1.7}
+#global-ai-assistant .assistant-scope-notice summary{padding:10px 12px;cursor:pointer;color:#876b3d}
+#global-ai-assistant .assistant-scope-notice p{padding:0 12px 12px;margin:0}
+@media(max-width:920px){
+  #app .mobile-nav-spacer{display:block;height:var(--mobile-nav-height,180px)}
+  #app .platform-shell .platform-sidebar{position:fixed;inset:0 0 auto;z-index:40;height:auto;max-height:min(64dvh,420px);min-height:0;overflow-y:auto;overscroll-behavior:contain;background:#fff;padding-top:calc(10px + env(safe-area-inset-top));box-shadow:0 4px 16px #28476f0b;transform:translateY(0);transition:transform .2s ease,visibility .2s}
+  #app .platform-shell .platform-sidebar.is-mobile-collapsed{transform:translateY(-105%);visibility:hidden;pointer-events:none}
+  #app .platform-shell .platform-sidebar.is-over-assistant{z-index:111}
+  body>.mobile-nav-backdrop{display:block;position:fixed;inset:0;border-radius:0;background:#182d4e50;backdrop-filter:blur(2px);z-index:110;padding:0}
+  #global-ai-assistant .assistant-identity .assistant-nav-entry{padding:0;border:1px solid #d6e3f5;font-size:17px;min-height:32px}
+  #app .mobile-nav-dismiss{display:block;position:absolute;right:14px;top:calc(12px + env(safe-area-inset-top));min-height:36px;padding:7px 10px;font-size:11px;background:#f0f5fc;border:1px solid #dfE8f4;color:#5d7ba1}
+  #app .platform-sidebar .platform-brand{padding-right:75px}
+  #app .mobile-navigation-collapsed .platform-topbar{padding-left:59px}
+  #app .platform-topbar>div:first-of-type{min-width:0}
+  #app .platform-topbar h1{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  #global-ai-assistant .assistant-chat-scroll{background:#f5f8fc;padding:14px 10px 24px}
+  #global-ai-assistant .assistant-response{padding:17px 14px;border-radius:14px;box-shadow:none}
+  #global-ai-assistant .answer-teaching-layout .answer-markdown{font-size:clamp(14px,calc(12px + .5vw),16px);line-height:1.9}
+  #global-ai-assistant .answer-teaching-layout .answer-markdown .answer-opening{padding:12px 13px;margin-bottom:20px}
+  #global-ai-assistant .answer-teaching-layout .answer-markdown h2{margin-top:25px}
+  #global-ai-assistant .assistant-answer-heading{gap:8px}
+  #global-ai-assistant .assistant-answer-heading strong{font-size:13px}
+  #global-ai-assistant .assistant-reading-links>span{display:none}
+}
+@media(prefers-reduced-motion:reduce){#app .platform-shell .platform-sidebar{transition:none}}

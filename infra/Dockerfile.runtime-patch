@@ -1,0 +1,12 @@
+# Feature-only release on the previously verified runtime, without dependency upgrades.
+# Fresh installations should use the root Dockerfile instead.
+ARG BASE_IMAGE=computer-course-rag-api:latest
+FROM ${BASE_IMAGE}
+WORKDIR /app
+COPY pyproject.toml README.md LICENSE THIRD_PARTY_NOTICES.md ./
+COPY app ./app
+COPY scripts ./scripts
+COPY migrations ./migrations
+COPY materials/eval ./materials/eval
+COPY alembic.ini ./alembic.ini
+RUN pip install --no-cache-dir --no-deps --no-build-isolation .

@@ -1,0 +1,21 @@
+{
+  "version": "r2-v1-20261028",
+  "scope": "开发侧固定样题，非教师审定题集；检索页定位与生成讲解分开验收。gaps仅对指定资料选读范围判断，不声称全库没有该知识。",
+  "cases": [
+    {"id": "ds-stack", "course_code": "CS201-26F", "pack_id": "hello-algo-stack-binary-zh-r2-v1", "pages": [1], "question": "栈为什么是后进先出？push、pop、peek分别做什么？", "expected_facts": ["只在栈顶插入和删除", "peek读取栈顶而不删除"], "teaching_check": "用三次入栈和一次出栈展示顺序，不能将peek说成弹出。"},
+    {"id": "ds-stack-growth", "course_code": "CS201-26F", "pack_id": "hello-algo-stack-binary-zh-r2-v1", "pages": [2], "question": "动态数组实现的栈，每次入栈都是O(1)吗？扩容有什么影响？", "expected_facts": ["扩容时单次入栈可为O(n)", "不能把均摊复杂度当每次最坏情况"], "teaching_check": "区分单次最坏与均摊；补充均摊分析要标为推导而非原文已有证明。"},
+    {"id": "ds-binary-boundary", "course_code": "CS201-26F", "pack_id": "hello-algo-stack-binary-zh-r2-v1", "pages": [3], "question": "闭区间二分查找中，为什么更新为m+1或m-1，而不是保留m？", "expected_facts": ["已比较的中点可排除", "每轮区间缩小", "有序数组前提"], "teaching_check": "给一个短数组演示；中点用i+floor((j-i)/2)避免加法溢出，变量需解释。"},
+    {"id": "ds-binary-cost", "course_code": "DSA-2026", "pack_id": "hello-algo-stack-binary-zh-r2-v1", "pages": [4], "question": "为什么二分查找不适合直接用于链表？与有序数组的查找有什么区别？", "expected_facts": ["依赖高效随机访问", "链表跳到中点开销大"], "teaching_check": "不能声称链表绝对不能二分；应解释不具备同样的时间优势。"},
+    {"id": "os-process", "course_code": "CS202-26F", "pack_id": "learningos-process-replacement-zh-r2-v1", "pages": [1], "question": "程序和进程有什么区别？进程提供哪些关键抽象？", "expected_facts": ["进程是程序运行的动态过程或实例", "逻辑控制流与私有地址空间"], "teaching_check": "用同一个程序运行两次举例，自拟例子不标作原讲义实例。"},
+    {"id": "os-context", "course_code": "OS-2026", "pack_id": "learningos-process-replacement-zh-r2-v1", "pages": [2], "question": "进程切换为什么需要保存和恢复上下文？PC和SP起什么作用？", "expected_facts": ["暂停旧进程并调度就绪进程", "恢复执行位置和状态"], "teaching_check": "PC/SP含义属于补充解释时如实区分，不编造具体芯片切换指令。"},
+    {"id": "os-fifo", "course_code": "CS202-26F", "pack_id": "learningos-process-replacement-zh-r2-v1", "pages": [3], "question": "FIFO页面置换是按进入内存时间还是最近访问时间？增加物理页一定减少缺页吗？", "expected_facts": ["FIFO按驻留内存时间", "可能出现Belady异常"], "teaching_check": "区分FIFO与LRU，不能说增加页框总能降低缺页次数。"},
+    {"id": "os-lru", "course_code": "OS-2026", "pack_id": "learningos-process-replacement-zh-r2-v1", "pages": [4], "question": "LRU页面置换的链表如何维护，缺页时换出哪一页？", "expected_facts": ["访问后移到链表首部", "尾部最久未访问页被换出", "维护有开销"], "teaching_check": "若给访问序列，要逐步计算，不将LRU说成预测未来的OPT。"},
+    {"id": "net-dns", "course_code": "CS203-26F", "pack_id": "mdn-dns-tcp-tls-zh-r2-v1", "pages": [1], "question": "DNS正向查询和反向查询有什么区别？", "expected_facts": ["域名查IP", "IP查域名"], "teaching_check": "不能说反向查询保证唯一域名，不能把DNS当作HTTP内容传输。"},
+    {"id": "net-tcp", "course_code": "NET-2026", "pack_id": "mdn-dns-tcp-tls-zh-r2-v1", "pages": [2], "question": "TCP怎样向应用提供可靠有序的数据流，拥塞控制有什么作用？", "expected_facts": ["可靠且有序的数据流", "拥塞控制调节发送负载"], "teaching_check": "选读未解释具体重传算法；若补充确认和重传需注明通用知识，不声称永不失败。"},
+    {"id": "net-tls", "course_code": "CS203-26F", "pack_id": "mdn-dns-tcp-tls-zh-r2-v1", "pages": [3], "question": "TLS解决什么问题，服务器为什么需要数字证书？", "expected_facts": ["防窃听和篡改", "证书用于身份认证"], "teaching_check": "不要把TLS说成能够防止所有安全攻击或保证网站业务内容可信。"}
+  ],
+  "gaps": [
+    {"id": "gap-raft", "pack_id": "hello-algo-stack-binary-zh-r2-v1", "question": "仅依据这些选读资料，证明Raft成员变更协议的安全性。", "expected": "选读不含Raft证明，不能伪造教材依据；明确不足。"},
+    {"id": "gap-tls-derivation", "pack_id": "mdn-dns-tcp-tls-zh-r2-v1", "question": "仅依据这些选读资料，推导TLS1.3完整密钥派生公式及HKDF每个输入。", "expected": "资料只有TLS概念和认证，不支持密钥派生细节；不把一般介绍当作公式证明。"}
+  ]
+}
